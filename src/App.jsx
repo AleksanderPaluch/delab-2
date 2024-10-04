@@ -3,6 +3,7 @@ import { lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Layout from "./components/Layout/Layout";
+import Navigation from "./components/Navigation/Navigation";
 
 // Використання lazy для динамічного імпорту компонентів
 const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
@@ -13,7 +14,7 @@ const NotFoundPage = lazy(() => import("./pages/NotFoundPage/NotFoundPage"));
 function App() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navigation />
       <Layout>
         <Routes>
           <Route path="/" element={<HomePage />} />
