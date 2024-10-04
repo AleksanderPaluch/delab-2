@@ -1,29 +1,29 @@
+import "./App.css";
+import { lazy } from "react";
+import { Routes, Route } from "react-router-dom";
 
-import './App.css'
-import { Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Layout from "./components/Layout/Layout";
 
 // Використання lazy для динамічного імпорту компонентів
-const Home = lazy(() => import('./pages/Home'));
-const About = lazy(() => import('./pages/About'));
-const Contact = lazy(() => import('./pages/Contact'));
+const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
+const ReaserchPage = lazy(() => import("./pages/ReaserchPage/ReaserchPage"));
+const GuidelinesPage = lazy(() => import("./pages/GuidelinesPage/GuidelinesPage"));
+const NotFoundPage = lazy(() => import("./pages/NotFoundPage/NotFoundPage"));
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      {/* Suspense обгортає компоненти, які завантажуються динамічно */}
-      <Suspense fallback={<div>Loading...</div>}>
+    <>
+      {/* <Navbar /> */}
+      <Layout>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/badanie" element={<ReaserchPage />} />
+          <Route path="/wytyczne" element={<GuidelinesPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
-      </Suspense>
-    </Router>
+      </Layout>
+    </>
   );
 }
 
 export default App;
-
