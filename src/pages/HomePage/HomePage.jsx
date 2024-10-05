@@ -1,9 +1,12 @@
-import React from 'react'
 
+import Rekomendacje from '../../components/Rekomendacje/Rekomendacje'
+import css from "./HomePage.module.css"
 const HomePage = () => {
   return (
-    <div>
-      <h1>hujujuj</h1>
+    <div className={css.homeBox}>
+    <div className={css.leftBox}></div>
+      <Rekomendacje />
+      <div className={css.rightBox}></div>
     </div>
   )
 }

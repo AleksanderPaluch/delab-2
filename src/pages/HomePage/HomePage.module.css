@@ -1,0 +1,14 @@
+.homeBox {
+    display: flex;
+    justify-content: center;
+}
+
+.leftBox {
+    width: 100%;
+    background-color: blue;
+}
+
+.rightBox {
+width: 100%;
+    background-color: brown;
+}
