@@ -1,0 +1,59 @@
+
+
+
+
+
+
+.title {
+    z-index: 999;
+    color: #0000008a;
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    line-height: 1.4;
+    opacity: 0; /* Початковий стан - невидимий */
+    animation: fadeIn 1s forwards ease-in-out; /* Анімація плавної появи */
+    transition: transform 0.5s ease-in-out; /* Плавний ефект трансформації при наведенні */
+}
+
+/* Анімація для плавної появи заголовка */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Легкий зсув при завантаженні */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.brain {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .title {
+        font-size: 27px;
+    }
+}
+
+
+@media screen and (min-width: 1360px) {
+    .title {
+        font-size: 37px;
+    }
+
+    .brain {
+        display: flex;
+        position: absolute;
+        top: 120px;
+        right: 40px;
+        width: 270px;
+    }
+}
+
+
+
+
+
