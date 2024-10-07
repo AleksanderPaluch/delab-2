@@ -55,8 +55,9 @@
   background-color: rgb(20, 20, 20);
   position: relative;
   display: flex;
-  justify-content: flex-end;
-  padding: 10px 90px;
+  padding: 10px;
+  justify-content: center;
+  
 }
 
 .list {
@@ -82,7 +83,15 @@
     padding: 14px 140px;
   }
 
+}
+
+@media screen and (min-width: 1360px) {
+  .footer {
+    padding: 14px 140px;
+  }
+
   .footerSocialBox {
-    padding: 10px 140px;
+   
+    justify-content: flex-end;
   }
 }
