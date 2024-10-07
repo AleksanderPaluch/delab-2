@@ -8,6 +8,11 @@
   display: none; /* Приховані на менших екранах */
 }
 
+.mainContent {
+  padding-top: 80px;
+
+}
+
 @media screen and (min-width: 1360px) {
   .sidebarLeft,
   .sidebarRight {

@@ -8,8 +8,8 @@ const Loader = () => {
         visible={true}
         height="100"
         width="100"
-        color="#87d28d"
-        secondaryColor="#9be1a0"
+        color="#3485C8"
+        secondaryColor="#ee1a1a"
         radius="12.5"
         ariaLabel="mutating-dots-loading"
       />
