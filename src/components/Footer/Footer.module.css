@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  padding: 20px 140px;
+  padding: 14px 140px;
   background-color: #222222;
   color: #fff;
   text-align: center;
@@ -57,7 +57,7 @@
     position: relative;
     display: flex;
     justify-content: flex-end;
-    padding: 20px 140px;
+    padding: 10px 140px;
 }
 
 .list {
