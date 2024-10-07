@@ -16,15 +16,32 @@
   /* height: 100%; */
 }
 
-@media screen and (min-width: 768px) {
-
-  .mainContent {
-    width: 768px;
-
-  }
-  
+.sideBarBtn {
+  width: 240px;
+  height: 20px;
+  display: flex;
+  margin-top: 15px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  color: var(--dark);
+  font-size: 15px;
+}
+.sideBarBtn:hover {
+  color: var(--blue);
+  font-size: 16px;
 }
 
+
+.text {
+  font-size: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  .mainContent {
+    width: 768px;
+  }
+}
 
 @media screen and (min-width: 1360px) {
   .sidebarLeft,
@@ -48,6 +65,8 @@
   }
 
   .sidebarRight {
+    padding-top: 120px;
+
     right: 0; /* Фіксуємо правий сайдбар */
     /* background-color: red; */
   }
@@ -60,5 +79,4 @@
   .pageContainer {
     max-width: 1360px;
   }
-  
 }

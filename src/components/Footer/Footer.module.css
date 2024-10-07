@@ -91,7 +91,7 @@
   }
 
   .footerSocialBox {
-   
+    padding: 10px 140px;
     justify-content: flex-end;
   }
 }

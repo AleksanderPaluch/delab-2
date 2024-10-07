@@ -4,7 +4,7 @@ const Rekomendacje = () => {
   return (
     <div className={css.recomendBox}>
       <h1 className={css.title} id="rekomendacje">Rekomendacje</h1>
-      <h2 className={css.title2} id="dla-caego-srodowiska-uw">Dla całego środowiska UW</h2>
+      <h2 className={css.title2} id="Dla całego środowiska UW">Dla całego środowiska UW</h2>
       <ul className={css.list}>
         <li className={css.item}>
           Zapoznaj się z wytycznymi UW dotyczącymi korzystania z narzędzi
@@ -123,7 +123,7 @@ const Rekomendacje = () => {
           </p>
         </li>
       </ul>
-      <h2 className={css.title2} id="dla-dydaktykow-i-dydaktyczek">Dla dydaktyków i dydaktyczek</h2>
+      <h2 className={css.title2} id="Dla dydaktyków i dydaktyczek">Dla dydaktyków i dydaktyczek</h2>
       <ul className={css.list}>
         <li className={css.item}>
           <p>
@@ -167,7 +167,7 @@ const Rekomendacje = () => {
           </p>
         </li>
       </ul>
-      <h2 className={css.title2} id="dla-studentow-i-studentek">Dla studentów i studentek</h2>
+      <h2 className={css.title2} id="Dla studentów i studentek">Dla studentów i studentek</h2>
       <ul className={css.list}>
         <li className={css.item}>
           <p>
