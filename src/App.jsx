@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 
 import Header from "./components/Header/Header";
-import Loader from "./components/Loader/Loader";
+
 
 // Використання lazy для динамічного імпорту компонентів
 const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
@@ -31,6 +31,7 @@ function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Layout>
+ 
     </>
   );
 }

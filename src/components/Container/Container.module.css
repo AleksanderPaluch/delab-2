@@ -1,6 +1,7 @@
 .container {
   min-width: 360px;
-  max-width: 375px;
+  
+  /* max-width: 375px; */
 
   margin: 0 auto;
   /* background-color: blue; */
@@ -8,15 +9,16 @@
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
-    padding: 0 12px;
+    /* max-width: 768px; */
+    /* padding: 0 12px; */
+   
     /* background-color: red; */
   }
 }
 
 @media screen and (min-width: 1360px) {
   .container {
-    max-width: 1360px;
+   width: 100%;
     /* background-color: yellow; */
   }
 }

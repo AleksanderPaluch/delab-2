@@ -13,7 +13,7 @@
   --dark: #000000de;
   --white: #ffffff;
   --cream: #f0eff4d2;
-  --red: #ef5050;
+  --red: #ee1a1a;
  
   color: var(--dark);
   background-color: var(--white);
@@ -25,10 +25,9 @@
 }
 
 body {
-  /* max-width: 1360px; */
+
   margin: auto;
-  /* margin-top: 0;
-  padding: 0; */
+
 }
 
 * {
@@ -41,3 +40,19 @@ button {
 html {
   scroll-behavior: smooth;
 }
+
+/* Для WebKit-браузерів */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #646464;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:  #222222;
+  /* border-radius: 10px; */
+  /* border: 2px solid #fff; */
+}
+

@@ -9,9 +9,22 @@
 }
 
 .mainContent {
+  width: 375px;
+  margin: auto;
   padding-top: 80px;
-
+  min-height: 90vh;
+  height: 100%;
 }
+
+@media screen and (min-width: 768px) {
+
+  .mainContent {
+    width: 768px;
+
+  }
+  
+}
+
 
 @media screen and (min-width: 1360px) {
   .sidebarLeft,
@@ -44,4 +57,8 @@
     margin: auto;
     width: calc(100% - 700px); /* Ширина основного контенту між сайдбарами */
   }
+  .pageContainer {
+    max-width: 1360px;
+  }
+  
 }

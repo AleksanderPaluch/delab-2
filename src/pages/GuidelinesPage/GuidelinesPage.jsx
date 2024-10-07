@@ -1,11 +1,16 @@
-import React from 'react'
+import css from "./GuidelinesPage.module.css";
+import Page from "../../components/Page/Page";
+import Footer from "../../components/Footer/Footer";
 
 const GuidelinesPage = () => {
   return (
-    <div>
-      <h1>blellele</h1>
-    </div>
-  )
-}
+    <>
+      <Page>
+        <h1>Wytyczne</h1>
+      </Page>
+      <Footer prevPage={"/badanie"} prevPageName={"Badanie"} />
+    </>
+  );
+};
 
-export default GuidelinesPage
+export default GuidelinesPage;
