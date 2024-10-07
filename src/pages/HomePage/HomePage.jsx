@@ -1,11 +1,15 @@
 import Page from "../../components/Page/Page";
-import Rekomendacje from "../../components/Rekomendacje/Rekomendacje";
+
 import css from "./HomePage.module.css";
 
 const HomePage = () => {
   return (
     <Page>
-      <Rekomendacje />
+      <h1>
+        Przewodnik po bezpiecznym i świadomym korzystaniu z AI na UW, obejmujący
+        zasady, etyczne wyzwania oraz praktyczne wskazówki dla studentów i
+        wykładowców.
+      </h1>
     </Page>
   );
 };

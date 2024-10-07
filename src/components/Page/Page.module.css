@@ -11,7 +11,12 @@
 @media screen and (min-width: 1360px) {
   .sidebarLeft,
   .sidebarRight {
+    margin-top: 51px;
+    padding: 40px 20px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
     width: 320px; /* Ширина сайдбарів */
     position: fixed; /* Фіксація сайдбарів */
     top: 0;
@@ -21,15 +26,16 @@
 
   .sidebarLeft {
     left: 0; /* Фіксуємо лівий сайдбар */
-    background-color: blue;
+    /* background-color: blue; */
   }
 
   .sidebarRight {
     right: 0; /* Фіксуємо правий сайдбар */
-    background-color: red;
+    /* background-color: red; */
   }
 
   .mainContent {
+    padding-top: 120px;
     margin: auto;
     width: calc(100% - 700px); /* Ширина основного контенту між сайдбарами */
   }

@@ -1,0 +1,11 @@
+.nav {
+    margin-top: 40px;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.navLink {
+    text-decoration: none;
+}
