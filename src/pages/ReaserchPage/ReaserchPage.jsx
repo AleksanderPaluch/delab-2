@@ -1,11 +1,10 @@
-import React from 'react'
+import Page from "../../components/Page/Page";
+import css from "./ReaserchPage.module.css";
 
 const ReaserchPage = () => {
-  return (
-    <div>
-      <h1>reaaseasad</h1>
-    </div>
-  )
-}
+  return <Page>
+    
+  </Page>;
+};
 
-export default ReaserchPage
+export default ReaserchPage;

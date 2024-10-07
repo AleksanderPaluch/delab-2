@@ -1,14 +1,13 @@
+import Page from "../../components/Page/Page";
+import Rekomendacje from "../../components/Rekomendacje/Rekomendacje";
+import css from "./HomePage.module.css";
 
-import Rekomendacje from '../../components/Rekomendacje/Rekomendacje'
-import css from "./HomePage.module.css"
 const HomePage = () => {
   return (
-    <div className={css.homeBox}>
-    <div className={css.leftBox}></div>
+    <Page>
       <Rekomendacje />
-      <div className={css.rightBox}></div>
-    </div>
-  )
-}
+    </Page>
+  );
+};
 
-export default HomePage
+export default HomePage;

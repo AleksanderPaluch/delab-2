@@ -1,0 +1,36 @@
+.pageContainer {
+  display: flex;
+  position: relative;
+}
+
+.sidebarLeft,
+.sidebarRight {
+  display: none; /* Приховані на менших екранах */
+}
+
+@media screen and (min-width: 1360px) {
+  .sidebarLeft,
+  .sidebarRight {
+    display: flex;
+    width: 320px; /* Ширина сайдбарів */
+    position: fixed; /* Фіксація сайдбарів */
+    top: 0;
+    height: 100vh; /* На всю висоту екрану */
+    overflow-y: auto; /* Додаємо скрол, якщо потрібно */
+  }
+
+  .sidebarLeft {
+    left: 0; /* Фіксуємо лівий сайдбар */
+    background-color: blue;
+  }
+
+  .sidebarRight {
+    right: 0; /* Фіксуємо правий сайдбар */
+    background-color: red;
+  }
+
+  .mainContent {
+    margin: auto;
+    width: calc(100% - 700px); /* Ширина основного контенту між сайдбарами */
+  }
+}
