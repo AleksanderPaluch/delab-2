@@ -1,0 +1,38 @@
+.rechartsBox {
+  /* background-color: yellow; */
+  margin-top: 20px;
+  width: 100%;
+
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.occupancyBox {
+  /* background-color: blue; */
+  width: 100%;
+}
+
+.statsBox {
+  /* background-color: red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.smallBox {
+  height: 100%;
+  /* background-color: aquamarine; */
+  width: 100%;
+}
+
+@media screen and (min-width: 1360px) {
+  .rechartsBox {
+    flex-direction: row;
+  }
+  .statsBox {
+    gap: 0;
+  }
+}

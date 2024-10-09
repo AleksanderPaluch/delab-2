@@ -4,31 +4,32 @@
 
 .title {
     color: #0000008a;
-    font-size: 2.4em;
+    font-size: 38px; /* 2.4em * 16px */
     line-height: 1.3;
-    margin: 0em 0 1.25em;
+    margin: 0px 0 20px; /* 1.25em * 16px = 20px */
 }
 
 .title2 {
     color: #0000008a;
-    font-size: 1.5625em;
+    font-size: 25px; /* 1.5625em * 16px */
     line-height: 1.4;
-    margin: 1.6em 0 .64em;
+    margin: 25.6px 0 10.24px; /* 1.6em * 16px = 25.6px; 0.64em * 16px = 10.24px */
 }
 
 .list {
-    margin-left: 1.25em;
+    margin-left: 20px; /* 1.25em * 16px = 20px */
     position: relative;
     margin-bottom: 80px;
 }
 
 .item {
-    margin-bottom: .5em;
-    font-size: .9rem;
+    margin-bottom: 8px; /* 0.5em * 16px = 8px */
+    font-size: 14.4px; /* 0.9rem = 14.4px, якщо 1rem = 16px */
     line-height: 1.6;
     margin-bottom: 10px;
     position: relative; /* Додано для позиціонування псевдоелемента */
 }
+
 
 .list .item:before { /* Видалено зайвий пробіл */
     content: "✔"; /* Можна замінити на інший символ, наприклад, номер або текст */

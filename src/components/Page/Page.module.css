@@ -52,7 +52,7 @@
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
-    width: 320px; /* Ширина сайдбарів */
+    width: 270px; /* Ширина сайдбарів */
     position: fixed; /* Фіксація сайдбарів */
     top: 0;
     height: 100%;
@@ -72,9 +72,9 @@
   }
 
   .mainContent {
-    padding-top: 120px;
+    padding-top: 100px;
     margin: auto;
-    width: calc(100% - 700px); /* Ширина основного контенту між сайдбарами */
+    width: calc(100% - 540px); /* Ширина основного контенту між сайдбарами */
   }
   .pageContainer {
     max-width: 1360px;

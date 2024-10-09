@@ -14,7 +14,7 @@ const Navigation = () => {
         <li className={css.item}>
           {" "}
           <NavLink to="/badanie" className={css.navLink}>
-            Badanie
+            Badanie DELab UW
           </NavLink>
         </li>
         <li className={css.item}>
