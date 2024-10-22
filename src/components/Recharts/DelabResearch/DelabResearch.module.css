@@ -1,9 +1,11 @@
 .section {
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: forestgreen;
 }
 
 .rechartsBox {
-  /* background-color: yellow; */
+  background-color: white;
   margin-top: 20px;
   width: 100%;
   display: flex;
@@ -12,12 +14,11 @@
 }
 
 .occupancyBox {
-  /* background-color: blue; */
   width: 100%;
 }
 
 .statsBox {
-  /* background-color: red; */
+
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -26,11 +27,10 @@
 
 .smallBox {
   height: 100%;
-  /* background-color: aquamarine; */
   width: 100%;
 }
 
-@media screen and (min-width: 1360px) {
+@media screen and (min-width: 1440px) {
   .rechartsBox {
     flex-direction: row;
   }

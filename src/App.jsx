@@ -1,4 +1,4 @@
-import { lazy, useRef, useEffect } from "react";
+import { lazy } from "react";
 import "./App.css";
 
 import Layout from "./components/Layout/Layout";
@@ -9,8 +9,8 @@ const Recomendations = lazy(() =>
   import("./components/Recomendations/Recomendations")
 );
 const Research = lazy(() => import("./components/Research/Research"));
-const Recharts = lazy(() =>
-  import("./components/BadanieRecharts/BadanieRecharts")
+const DelabResearch = lazy(() =>
+  import("./components/Recharts/DelabResearch/DelabResearch")
 );
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         <Home />
         <Recomendations />
         <Research />
-        <Recharts />
+        <DelabResearch />
       </Layout>
     </>
   );
