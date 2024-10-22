@@ -1,30 +1,28 @@
 .section {
-    background-color: yellow;
+  margin-bottom: 40px;
 }
 
-
 .box {
-
   width: 100%;
 }
 
 .title {
   padding-left: 40px;
   color: #0000008a;
-  font-size: 30px; /* 2.4em * 16px */
+  font-size: 30px;
   line-height: 1.3;
-  margin: 0px 0 20px; /* 1.25em * 16px = 20px */
+  margin: 0px 0 20px;
 }
 
 .title2 {
   color: #0000008a;
-  font-size: 25px; /* 1.5625em * 16px */
+  font-size: 25px;
   line-height: 1.4;
-  margin: 25.6px 0 10.24px; /* 1.6em * 16px = 25.6px; 0.64em * 16px = 10.24px */
+  margin: 25.6px 0 10px;
 }
 
 .list {
-  margin-left: 20px; /* 1.25em * 16px = 20px */
+  margin-left: 20px;
   position: relative;
   margin-bottom: 80px;
 }
@@ -32,7 +30,7 @@
 .item {
   padding-left: 20px;
 
-  font-size: 14.4px; /* 0.9rem = 14.4px, якщо 1rem = 16px */
+  font-size: 14.4px;
   line-height: 1.6;
   margin-bottom: 10px;
 }
@@ -40,5 +38,5 @@
 .itemBig {
   padding-left: 60px;
   color: #0000008a;
-  font-size: 16px; /* 0.9rem = 14.4px, якщо 1rem = 16px */
+  font-size: 16px;
 }
