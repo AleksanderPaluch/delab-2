@@ -4,7 +4,7 @@ import "./App.css";
 import Layout from "./components/Layout/Layout";
 
 // Динамічний імпорт компонентів (lazy loading)
-const Home = lazy(() => import("./Home/Home"));
+const Home = lazy(() => import("./components/Home/Home"));
 const Recomendations = lazy(() =>
   import("./components/Recomendations/Recomendations")
 );

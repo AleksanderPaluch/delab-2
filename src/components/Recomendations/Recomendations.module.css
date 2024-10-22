@@ -1,46 +1,46 @@
 .section {
-    background-color: rgb(255, 0, 51);
-  }
-  
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 
 .recomendBox {
-   width: 100%;
+  width: 100%;
 }
 
 .title {
-    color: #0000008a;
-    font-size: 38px; /* 2.4em * 16px */
-    line-height: 1.3;
-    margin: 0px 0 20px; /* 1.25em * 16px = 20px */
+  color: #0000008a;
+  font-size: 38px; /* 2.4em * 16px */
+  line-height: 1.3;
+  margin: 0px 0 20px; /* 1.25em * 16px = 20px */
 }
 
 .title2 {
-    color: #0000008a;
-    font-size: 25px; /* 1.5625em * 16px */
-    line-height: 1.4;
-    margin: 25.6px 0 10.24px; /* 1.6em * 16px = 25.6px; 0.64em * 16px = 10.24px */
+  color: #0000008a;
+  font-size: 25px; /* 1.5625em * 16px */
+  line-height: 1.4;
+  margin: 25.6px 0 10.24px; /* 1.6em * 16px = 25.6px; 0.64em * 16px = 10.24px */
 }
 
 .list {
-    margin-left: 20px; /* 1.25em * 16px = 20px */
-    position: relative;
-    margin-bottom: 80px;
+  margin-left: 20px; /* 1.25em * 16px = 20px */
+  position: relative;
+  margin-bottom: 80px;
 }
 
 .item {
-    margin-bottom: 8px; /* 0.5em * 16px = 8px */
-    font-size: 14.4px; /* 0.9rem = 14.4px, якщо 1rem = 16px */
-    line-height: 1.6;
-    margin-bottom: 10px;
-    position: relative; /* Додано для позиціонування псевдоелемента */
+  margin-bottom: 8px; /* 0.5em * 16px = 8px */
+  font-size: 14.4px; /* 0.9rem = 14.4px, якщо 1rem = 16px */
+  line-height: 1.6;
+  margin-bottom: 10px;
+  position: relative; /* Додано для позиціонування псевдоелемента */
 }
 
-
-.list .item:before { /* Видалено зайвий пробіл */
-    content: "✔"; /* Можна замінити на інший символ, наприклад, номер або текст */
-    position: absolute;
-    left: -18px;
-    top: 1px; /* Виправлено позицію, щоб символ був вертикально вирівняний з текстом */
-    color: #0000008a; /* Колір маркера */
-    font-size: 12px; /* Розмір маркера */
+.list .item:before {
+  /* Видалено зайвий пробіл */
+  content: "✔"; /* Можна замінити на інший символ, наприклад, номер або текст */
+  position: absolute;
+  left: -18px;
+  top: 1px; /* Виправлено позицію, щоб символ був вертикально вирівняний з текстом */
+  color: #0000008a; /* Колір маркера */
+  font-size: 12px; /* Розмір маркера */
 }
