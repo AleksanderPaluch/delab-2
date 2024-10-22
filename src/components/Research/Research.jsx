@@ -1,6 +1,6 @@
-import css from "./Badanie.module.css";
+import css from "./Research.module.css";
 
-const Badanie = () => {
+const Research = () => {
   return (
     <section className={css.section}>
       <div className={css.box}>
@@ -123,4 +123,4 @@ const Badanie = () => {
   );
 };
 
-export default Badanie;
+export default Research;

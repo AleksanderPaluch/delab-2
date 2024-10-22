@@ -1,6 +1,6 @@
-import css from "./HomePage.module.css";
+import css from "./Home.module.css";
 
-const HomePage = () => {
+const Home = () => {
   return (
  
       <section className={css.section}>
@@ -110,4 +110,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Home;

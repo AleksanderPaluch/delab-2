@@ -4,11 +4,11 @@ import "./App.css";
 import Layout from "./components/Layout/Layout";
 
 // Динамічний імпорт компонентів (lazy loading)
-const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
-const Rekomendacje = lazy(() =>
-  import("./components/Rekomendacje/Rekomendacje")
+const Home = lazy(() => import("./Home/Home"));
+const Recomendations = lazy(() =>
+  import("./components/Recomendations/Recomendations")
 );
-const Badanie = lazy(() => import("./components/Badanie/Badanie"));
+const Research = lazy(() => import("./components/Research/Research"));
 const Recharts = lazy(() =>
   import("./components/BadanieRecharts/BadanieRecharts")
 );
@@ -17,9 +17,9 @@ function App() {
   return (
     <>
       <Layout>
-        <HomePage />
-        <Rekomendacje />
-        <Badanie />
+        <Home />
+        <Recomendations />
+        <Research />
         <Recharts />
       </Layout>
     </>

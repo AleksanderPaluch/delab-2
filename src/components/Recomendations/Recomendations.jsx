@@ -1,6 +1,6 @@
-import css from "./Rekomendacje.module.css";
+import css from "./Recomendations.module.css";
 
-const Rekomendacje = () => {
+const Recomendations = () => {
   return (
     <section className={css.section}>
       <div className={css.recomendBox}>
@@ -216,4 +216,4 @@ const Rekomendacje = () => {
   );
 };
 
-export default Rekomendacje;
+export default Recomendations;
