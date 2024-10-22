@@ -9,6 +9,8 @@ import {
   ResponsiveContainer,
   LabelList,
 } from "recharts";
+import {  useRef, useEffect, useState  } from "react";
+import { useInView } from "react-intersection-observer";
 
 const data = [
   { name: "Studenci i studentki", count: 1222, uv: 69 },
@@ -31,12 +33,16 @@ const genderData = [
 ];
 
 const BadanieRecharts = () => {
+  const { ref, inView,  } = useInView();
+
   return (
-    <>
+    <section ref={ref} className={css.section}>
       <div className={css.rechartsBox}>
         <div className={css.occupancyBox}>
-        <p style={{ textAlign: "center", color: "#3485C8" }}>Stanowisko na UW</p>
-          <ResponsiveContainer width="100%" height={300}>
+          <p style={{ textAlign: "center", color: "#3485C8" }}>
+            Stanowisko na UW
+          </p>
+          <ResponsiveContainer  width="100%" height={300}>
             <BarChart
               data={data}
               layout="vertical" // Перетворюємо графік на горизонтальний
@@ -73,6 +79,7 @@ const BadanieRecharts = () => {
                 barSize={50}
                 radius={[0, 10, 10, 0]}
                 animationDuration={1500}
+                isAnimationActive={inView}
               >
                 <LabelList
                   dataKey="uv" // Відображаємо відсотки на стовпчиках з поля uv
@@ -86,7 +93,7 @@ const BadanieRecharts = () => {
         </div>
         <div className={css.statsBox}>
           <div className={css.smallBox}>
-          <p style={{ textAlign: "center", color: "#3485C8" }}>Wiek</p>
+            <p style={{ textAlign: "center", color: "#3485C8" }}>Wiek</p>
             <ResponsiveContainer width="100%" height={145}>
               <BarChart data={ageData}>
                 <XAxis
@@ -121,7 +128,8 @@ const BadanieRecharts = () => {
                   fill="#ee1a1a84"
                   barSize={50}
                   radius={[10, 10, 0, 0]}
-                  animationDuration={1500} // Zmieniamy zaokrąglenie na odpowiednie dla pionowego wykresu
+                  animationDuration={1500}
+                  isAnimationActive={inView}
                 >
                   <LabelList
                     dataKey="uv"
@@ -168,8 +176,9 @@ const BadanieRecharts = () => {
                   dataKey="count"
                   fill="#ee1a1a84"
                   barSize={50}
-                  radius={[10, 10, 0, 0]} 
-                  animationDuration={1500}// Zmieniamy zaokrąglenie na odpowiednie dla pionowego wykresu
+                  radius={[10, 10, 0, 0]}
+                  isAnimationActive={inView}
+                  animationDuration={1500} // Zmieniamy zaokrąglenie na odpowiednie dla pionowego wykresu
                 >
                   <LabelList
                     dataKey="uv"
@@ -183,7 +192,7 @@ const BadanieRecharts = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

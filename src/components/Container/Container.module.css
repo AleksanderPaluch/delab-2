@@ -1,7 +1,7 @@
 .container {
   min-width: 360px;
   
-  /* max-width: 375px; */
+  width: 375px;
 
   margin: 0 auto;
   /* background-color: blue; */
@@ -9,16 +9,16 @@
 
 @media screen and (min-width: 768px) {
   .container {
-    /* max-width: 768px; */
+    width: 768px;
     /* padding: 0 12px; */
    
     /* background-color: red; */
   }
 }
 
-@media screen and (min-width: 1360px) {
+@media screen and (min-width: 1440px) {
   .container {
-   width: 100%;
+   width: 1440px;
     /* background-color: yellow; */
   }
 }

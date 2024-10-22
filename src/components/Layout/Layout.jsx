@@ -8,14 +8,14 @@ import Loader from "../Loader/Loader";
 const Layout = ({ children }) => {
   return (
     <Container>
-      <Suspense fallback={<Loader />}>{children}</Suspense>
+      <Suspense fallback="loading">{children}</Suspense>
       {/* <Toaster /> */}
     </Container>
   );
 };
 
 Layout.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.array,
 };
 
 export default Layout;

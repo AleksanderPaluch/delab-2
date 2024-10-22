@@ -1,9 +1,11 @@
+.section {
+  background-color: forestgreen;
+}
+
 .rechartsBox {
   /* background-color: yellow; */
   margin-top: 20px;
   width: 100%;
-
-  margin-bottom: 60px;
   display: flex;
   flex-direction: column;
   gap: 10px;
