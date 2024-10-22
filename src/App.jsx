@@ -21,6 +21,8 @@ function App() {
         <Recomendations />
         <Research />
         <DelabResearch />
+        <Recomendations />
+        <Recomendations />
       </Layout>
     </>
   );

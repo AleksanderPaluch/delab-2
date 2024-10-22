@@ -7,7 +7,7 @@ import AgeReachart from "./AgeReachart";
 
 const DelabResearch = () => {
   const { ref, inView } = useInView();
-
+console.log(ref);
   return (
     <section ref={ref} className={css.section}>
       <div className={css.rechartsBox}>
