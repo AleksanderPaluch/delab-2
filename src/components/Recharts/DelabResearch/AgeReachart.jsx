@@ -57,7 +57,7 @@ const AgeReachart = ({inView}) => {
                   fill="#ee1a1a84"
                   barSize={50}
                   radius={[10, 10, 0, 0]}
-                  animationDuration={2500}
+                  animationDuration={1000}
                   isAnimationActive={inView}
                 >
                   <LabelList

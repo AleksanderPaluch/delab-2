@@ -51,7 +51,7 @@ const GenderRechart = ({inView}) => {
           barSize={50}
           radius={[10, 10, 0, 0]}
           isAnimationActive={inView}
-          animationDuration={2500} // Zmieniamy zaokrąglenie na odpowiednie dla pionowego wykresu
+          animationDuration={1000} // Zmieniamy zaokrąglenie na odpowiednie dla pionowego wykresu
         >
           <LabelList
             dataKey="uv"
