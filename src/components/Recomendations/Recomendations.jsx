@@ -4,7 +4,7 @@ import css from "./Recomendations.module.css";
 const Recomendations = () => {
   return (
     <section className={css.section}>
-        <Reveal>
+        <Reveal slide="true">
           <h1 className={css.title} id="rekomendacje">
             Rekomendacje
           </h1>
@@ -12,7 +12,7 @@ const Recomendations = () => {
       <div className={css.recomendBox}>
       
         <div>
-          <Reveal>
+          <Reveal slide="true">
             {" "}
             <h2 className={css.title2} id="Dla całego środowiska UW">
               Dla całego środowiska UW
@@ -144,7 +144,7 @@ const Recomendations = () => {
           </Reveal>
         </div>
         <div>
-          <Reveal>
+          <Reveal slide="true">
             {" "}
             <h2 className={css.title2} id="Dla dydaktyków i dydaktyczek">
               Dla dydaktyków i dydaktyczek
@@ -196,7 +196,7 @@ const Recomendations = () => {
               </li>
             </ul>
           </Reveal>
-          <Reveal>
+          <Reveal slide="true">
             {" "}
             <h2 className={css.title2} id="Dla studentów i studentek">
               Dla studentów i studentek
@@ -210,7 +210,7 @@ const Recomendations = () => {
                   różnych etapów kursu: na zajęciach, podczas wykonywania prac
                   domowych, zaliczeniowych i egzaminu. W przypadku jakichkolwiek
                   niepewności – dopytaj osoby prowadzącej zajęcia. →{" "}
-                  <a href="https://docs.google.com/document/d/1AT2ocGuGsHhxnWGehLP9QVdYcwX0Fuuvkv6p-7MM0oE/edit#bookmark=id.9e1k5yz7z9kz">
+                  <a  href="https://docs.google.com/document/d/1AT2ocGuGsHhxnWGehLP9QVdYcwX0Fuuvkv6p-7MM0oE/edit#bookmark=id.9e1k5yz7z9kz">
                     więcej
                   </a>
                 </p>

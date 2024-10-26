@@ -27,8 +27,13 @@
 }
 
 body {
-
+  color: var(--dark);
   margin: auto;
+
+}
+
+a {
+  text-decoration: none;
   
 }
 

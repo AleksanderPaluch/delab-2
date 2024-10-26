@@ -5,9 +5,10 @@
 
 .recomendBox {
   display: flex;
-  /* flex-direction: column; */
+ flex-direction: column;
   gap: 20px;
 }
+
 
 .title {
   color: #0000008a;
@@ -45,4 +46,13 @@
   top: 1px; /* Виправлено позицію, щоб символ був вертикально вирівняний з текстом */
   color: #0000008a; /* Колір маркера */
   font-size: 12px; /* Розмір маркера */
+}
+
+@media screen and (min-width: 1440px) {
+
+  .recomendBox {
+    flex-direction: row;
+   
+    
+  }
 }

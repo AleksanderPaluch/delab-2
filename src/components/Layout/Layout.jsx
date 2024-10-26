@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
           position: "sticky",
           top: 0,
           width: "100%",
-          height: "4px",
+          height: "8px",
         }}
       />
 
