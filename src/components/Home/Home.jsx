@@ -7,18 +7,19 @@ const Home = () => {
     <section className={css.section}>
       <video autoPlay muted loop playsInline className={css.video}>
         <source src={film} type="video/mp4" />
-        Ваш браузер не підтримує відео.
+      
       </video>
 
       <div className={css.content}>
-        <Reveal slide="true">
+        <Reveal delay="0" >
           <h1 className={css.title}>
-            Przewodnik po bezpiecznym i świadomym  korzystaniu z{" "} <br />
+            Przewodnik po bezpiecznym i świadomym korzystaniu z{" "}
             <span className={css.span1}>AI</span> na{" "}
             <span className={css.span2}>UW</span>
           </h1>
         </Reveal>
-        <Reveal slide="true">
+       
+        <Reveal delay="0"  >
           {" "}
           <p className={css.text}>
             Obejmujący zasady, etyczne wyzwania oraz praktyczne wskazówki dla
@@ -26,6 +27,8 @@ const Home = () => {
           </p>
         </Reveal>
       </div>
+
+      
     </section>
   );
 };

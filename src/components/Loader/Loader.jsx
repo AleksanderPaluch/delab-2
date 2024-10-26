@@ -9,7 +9,7 @@ const Loader = () => {
         height="100"
         width="100"
         color="#3485C8"
-        secondaryColor="#222222"
+        secondaryColor="#ee1a1a"
         radius="12.5"
         ariaLabel="mutating-dots-loading"
       />
