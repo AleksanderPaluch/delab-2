@@ -45,7 +45,7 @@ html {
 
 /* Для WebKit-браузерів */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 2px;
 }
 
 ::-webkit-scrollbar-track {

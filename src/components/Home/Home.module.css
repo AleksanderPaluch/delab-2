@@ -1,17 +1,15 @@
 .section {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  padding: 200px;
   height: 100vh;
-  margin-top: 200px;
-  /* margin-bottom: 200px; */
+  
+
 }
 
-.title {
-  z-index: 999;
-  color: #0000008a;
-  font-size: 21px;
-  font-weight: 500;
-  letter-spacing: 3px;
-  line-height: 1.4;
-}
+
 
 .span1 {
   color: #e50303b6;
