@@ -4,6 +4,7 @@ import { useInView } from "react-intersection-observer";
 import GenderRechart from "./GenderRechart";
 import PositionRechart from "./positionRechart";
 import AgeReachart from "./AgeReachart";
+import SienceField from "./SienceField";
 
 const DelabResearch = () => {
   const { ref, inView } = useInView();
@@ -23,6 +24,11 @@ const DelabResearch = () => {
             <GenderRechart inView={inView} />
           </div>
         </div>
+      </div>
+      <div >
+        <div><SienceField inView={inView} /></div>
+
+        <div></div>
       </div>
     </section>
   );

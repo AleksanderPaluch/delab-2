@@ -47,7 +47,7 @@ const PositionRechart = ({inView}) => {
               borderRadius: "12px",
               color: "#130066cb",
             }}
-            labelStyle={{ color: "#130066cb" }}
+            labelStyle={{ color: "#130066CC" }}
           />
           <CartesianGrid stroke="#3485C8" strokeDasharray="3 3" />
           <Bar
