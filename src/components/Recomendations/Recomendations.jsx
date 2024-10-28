@@ -18,7 +18,7 @@ const Recomendations = () => {
               Dla całego środowiska UW
             </h2>
           </Reveal>
-          <Reveal slide="true">
+          <Reveal >
             {" "}
             <ul className={css.list}>
               <li className={css.item}>
@@ -150,7 +150,7 @@ const Recomendations = () => {
               Dla dydaktyków i dydaktyczek
             </h2>
           </Reveal>
-          <Reveal slide="true">
+          <Reveal >
             {" "}
             <ul className={css.list}>
               <li className={css.item}>
@@ -202,7 +202,7 @@ const Recomendations = () => {
               Dla studentów i studentek
             </h2>
           </Reveal>
-          <Reveal slide="true">
+          <Reveal >
             <ul className={css.list}>
               <li className={css.item}>
                 <p>

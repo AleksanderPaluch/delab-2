@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 
-const Reveal = ({ children, width = "fit-content", slide = false, delay = 0.25 }) => {
+const Reveal = ({ children, width = "fit-content", slide = true, delay = 0.25 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.15  });
   const mainControls = useAnimation();
@@ -23,7 +23,7 @@ const Reveal = ({ children, width = "fit-content", slide = false, delay = 0.25 }
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.5, delay }}
+        transition={{ duration: 0.5, delay: 0.35 }}
       >
         {children}
       </motion.div>
@@ -43,7 +43,7 @@ const Reveal = ({ children, width = "fit-content", slide = false, delay = 0.25 }
             left: 0,
             right: 0,
             zIndex: 20,
-            background: "#3485C884",
+            background: "#3485C854",
           }}
         ></motion.div>
       ) : (

@@ -1,6 +1,6 @@
 import Reveal from "../Reveal/Reveal";
 import css from "./Home.module.css";
-import film from "../../../assets/video/ai-data-analytics-line-2d-animation-artificial-intelligence-brain-4k-motion-graphic-machine-learning-cloud-computing-business-analysis-linear-animated-cartoon-flat-concept-white-background-video.webm";
+import film from "../../../assets/video/robor_laptop.mp4";
 
 const Home = () => {
   return (
