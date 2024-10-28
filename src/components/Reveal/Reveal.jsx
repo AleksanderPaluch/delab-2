@@ -43,7 +43,7 @@ const Reveal = ({ children, width = "fit-content", slide = true, amount = 0.25})
             left: 0,
             right: 0,
             zIndex: 20,
-            background: "#3485C854",
+            background: "#3485C810",
           }}
         ></motion.div>
       ) : (
