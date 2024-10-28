@@ -6,6 +6,7 @@ import {
   ResponsiveContainer,
   Legend,
 } from "recharts";
+import css from "./DelabResearch.module.css";
 
 const data = [
   { name: "Studenci i studentki", count: 1222, uv: 69 },
@@ -17,8 +18,8 @@ const COLORS = ["#ee1a1a84", "#3485C8", "#130066cb"]; // Colors for each segment
 
 const PositionPieChart = ({ inView }) => (
   <>
-    <p style={{ textAlign: "center", color: "#3485C8" }}>Stanowisko на UW</p>
-    <ResponsiveContainer width="100%" height={380}>
+    <p className={css.label} >Stanowisko на UW</p>
+    <ResponsiveContainer width="100%" height={396}>
       <PieChart>
         <Pie
           data={data}
@@ -42,7 +43,7 @@ const PositionPieChart = ({ inView }) => (
         </Pie>
         <Tooltip
           formatter={(value, name, props) =>
-            name === "count"
+            name !== "count"
               ? [`${value} (${props.payload.uv}%)`, "Liczba osób"]
               : value
           }

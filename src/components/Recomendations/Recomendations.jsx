@@ -4,7 +4,7 @@ import css from "./Recomendations.module.css";
 const Recomendations = () => {
   return (
     <section className={css.section}>
-        <Reveal  amount="0.99">
+        <Reveal   amount="0.99">
           <h1 className={css.title} id="rekomendacje">
             Rekomendacje
           </h1>
@@ -12,13 +12,13 @@ const Recomendations = () => {
       <div className={css.recomendBox}>
       
         <div>
-          <Reveal slide="true">
+          <Reveal >
             {" "}
             <h2 className={css.subTitle} id="Dla całego środowiska UW">
               Dla całego środowiska UW
             </h2>
           </Reveal>
-          <Reveal >
+          <Reveal slide="false" >
             {" "}
             <ul className={css.list}>
               <li className={css.item}>
@@ -150,9 +150,9 @@ const Recomendations = () => {
               Dla dydaktyków i dydaktyczek
             </h2>
           </Reveal>
-          <Reveal >
+          <Reveal slide="false" >
             {" "}
-            <ul className={css.list}>
+            <ul  className={css.list}>
               <li className={css.item}>
                 <p>
                   Przemyśl i przeformułuj swoje kursy tak, aby uwzględniały
@@ -202,7 +202,7 @@ const Recomendations = () => {
               Dla studentów i studentek
             </h2>
           </Reveal>
-          <Reveal >
+          <Reveal slide="false" >
             <ul className={css.list}>
               <li className={css.item}>
                 <p>

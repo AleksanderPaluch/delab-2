@@ -6,6 +6,7 @@ import {
   ResponsiveContainer,
   Legend,
 } from "recharts";
+import css from "./DelabResearch.module.css";
 
 const genderData = [
   { gender: "Kobieta", count: 896, uv: 50 },
@@ -18,8 +19,8 @@ const COLORS = ["#ee1a1a84", "#3485C8", "#130066cb"]; // Custom colors for each 
 const GenderPieChart = ({ inView }) => {
   return (
     <>
-      <p style={{ textAlign: "center", color: "#3485C8" }}>Płeć</p>
-      <ResponsiveContainer width="100%" height={330}>
+      <p className={css.label} >Płeć</p>
+      <ResponsiveContainer width="100%" height={340}>
         <PieChart>
           <Pie
             data={genderData}
@@ -43,7 +44,7 @@ const GenderPieChart = ({ inView }) => {
           </Pie>
           <Tooltip
             formatter={(value, name, props) =>
-              name === "count"
+              name !== "count"
                 ? [`${value} (${props.payload.uv}%)`, "Liczba osób"]
                 : value
             }

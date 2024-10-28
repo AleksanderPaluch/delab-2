@@ -22,8 +22,8 @@
 }
 
 .content {
- 
-  width: 900px;
+ margin-left: 40px;
+  width: 920px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -37,7 +37,7 @@
   color: #0000008a;
   font-size: 21px;
   font-weight: 500;
-  line-height: 60px;
+  
 }
 
 
@@ -45,6 +45,7 @@
 
 
 .text {
+ 
   margin-left: 40px;
   width: 500px;
   color: #0000005f;
@@ -56,10 +57,12 @@
 .span1 {
   color: #e50303b6;
   font-size: 23px;
+  font-weight: 700;
 }
 .span2 {
   color: #024c8aa2;
   font-size: 23px;
+  font-weight: 700;
 }
 
 @media screen and (min-width: 768px) {

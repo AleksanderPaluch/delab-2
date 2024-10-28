@@ -6,6 +6,7 @@ import {
   ResponsiveContainer,
   Legend,
 } from "recharts";
+import css from "./DelabResearch.module.css";
 
 const ageData = [
   { age: "18-24", count: 1002, uv: 56 },
@@ -20,8 +21,8 @@ const COLORS = ["#ee1a1a84", "#3485C8", "#130066cb", "#ffc658", "#82ca9d"]; // C
 const AgePieChart = ({ inView }) => {
   return (
     <>
-      <p style={{ textAlign: "center", color: "#3485C8" }}>Wiek</p>
-      <ResponsiveContainer width="100%" height={330}>
+      <p className={css.label} >Wiek</p>
+      <ResponsiveContainer width="100%" height={340}>
         <PieChart>
           <Pie
             data={ageData}
@@ -45,7 +46,7 @@ const AgePieChart = ({ inView }) => {
           </Pie>
           <Tooltip
             formatter={(value, name, props) =>
-              name === "count"
+              name !== "count"
                 ? [`${value} (${props.payload.uv}%)`, "Liczba osób"]
                 : value
             }

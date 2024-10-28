@@ -23,7 +23,7 @@ const Reveal = ({ children, width = "fit-content", slide = true, amount = 0.25})
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.5, delay: 0.25 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
       >
         {children}
       </motion.div>
@@ -43,7 +43,7 @@ const Reveal = ({ children, width = "fit-content", slide = true, amount = 0.25})
             left: 0,
             right: 0,
             zIndex: 20,
-            background: "#3485C810",
+            background: "#3485C815",
           }}
         ></motion.div>
       ) : (
