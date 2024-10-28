@@ -1,14 +1,19 @@
+import DelabResearch from "../Recharts/DelabResearch/DelabResearch";
+import Reveal from "../Reveal/Reveal";
 import css from "./Research.module.css";
 
 const Research = () => {
   return (
     <section className={css.section}>
       <div className={css.box}>
-        <h1 className={css.title} id="badanie DELab UW">
-          {" "}
-          O badaniu DELab UW
-        </h1>
-        <p className={css.item}>
+        <Reveal amount="1">
+          <h1 className={css.title} id="badanie DELab UW">
+            {" "}
+            O badaniu DELab UW
+          </h1>
+        </Reveal>
+
+        <p className={css.text}>
           W marcu 2024 r. zespół DELab UW rozpoczął badanie „Generatywna
           sztuczna inteligencja na UW – możliwości, wyzwania, perspektywy”,
           skierowane do społeczności Uniwersytetu Warszawskiego. Celem było
@@ -20,9 +25,10 @@ const Research = () => {
           uzupełnionych o rekomendowane praktyki.
         </p>
 
-        <p className={css.itemBig}>
+        <p className={css.subTitle}>
           Nasza próba badawcza ma następującą strukture:
         </p>
+        <DelabResearch />
       </div>
     </section>
   );

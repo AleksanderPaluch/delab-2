@@ -4,7 +4,7 @@ import css from "./Recomendations.module.css";
 const Recomendations = () => {
   return (
     <section className={css.section}>
-        <Reveal slide="true">
+        <Reveal  amount="0.99">
           <h1 className={css.title} id="rekomendacje">
             Rekomendacje
           </h1>
@@ -14,7 +14,7 @@ const Recomendations = () => {
         <div>
           <Reveal slide="true">
             {" "}
-            <h2 className={css.title2} id="Dla całego środowiska UW">
+            <h2 className={css.subTitle} id="Dla całego środowiska UW">
               Dla całego środowiska UW
             </h2>
           </Reveal>
@@ -146,7 +146,7 @@ const Recomendations = () => {
         <div>
           <Reveal slide="true">
             {" "}
-            <h2 className={css.title2} id="Dla dydaktyków i dydaktyczek">
+            <h2 className={css.subTitle} id="Dla dydaktyków i dydaktyczek">
               Dla dydaktyków i dydaktyczek
             </h2>
           </Reveal>
@@ -198,7 +198,7 @@ const Recomendations = () => {
           </Reveal>
           <Reveal slide="true">
             {" "}
-            <h2 className={css.title2} id="Dla studentów i studentek">
+            <h2 className={css.subTitle} id="Dla studentów i studentek">
               Dla studentów i studentek
             </h2>
           </Reveal>

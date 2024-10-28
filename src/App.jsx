@@ -28,7 +28,7 @@ function App() {
         <Home />
         <Recomendations />
         <Research />
-        <DelabResearch />
+       
         <Recomendations />
         <Recomendations />
         {/* <FramerMotionTest /> */}
