@@ -1,0 +1,29 @@
+.section {
+    position: absolute;
+    
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+   
+}
+
+.label {
+    position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        
+        flex-direction: row;
+  
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .section {
+       height: 450px;
+        width: 1360px;
+        
+    }
+} 

@@ -10,11 +10,9 @@ const HomePage = () => {
   return (
     <div>
       {/* <Hero /> */}
-      <Recomendations />
-      {/* <Research />
+      {/* <Recomendations /> */}
+      <Research />
 
-      <Recomendations />
-      <Recomendations /> */}
     </div>
   );
 };

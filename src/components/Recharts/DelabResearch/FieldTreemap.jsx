@@ -1,4 +1,4 @@
-import css from "./DelabResearch.module.css";
+import css from "./TreeCharts.module.css";
 import { Treemap, Tooltip, ResponsiveContainer, Cell } from "recharts";
 
 const data = [

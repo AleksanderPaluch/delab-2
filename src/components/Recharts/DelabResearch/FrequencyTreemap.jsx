@@ -1,5 +1,5 @@
 import { Treemap, Tooltip, ResponsiveContainer, Cell } from "recharts";
-import css from "./DelabResearch.module.css";
+import css from "./TreeCharts.module.css";
 
 const data = [
   { name: "Bardzo często", size: 324, uv: 18, fill: "#ff7474" },

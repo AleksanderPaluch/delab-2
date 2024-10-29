@@ -6,7 +6,7 @@ import {
   ResponsiveContainer,
   Legend,
 } from "recharts";
-import css from "./DelabResearch.module.css";
+import css from "./PieCharts.module.css";
 
 const ageData = [
   { age: "18-24", count: 1002, uv: 56 },
@@ -22,7 +22,7 @@ const AgePieChart = ({ inView }) => {
   return (
     <>
       <p className={css.label} >Wiek</p>
-      <ResponsiveContainer width="100%" height={340}>
+      <ResponsiveContainer width="100%" height={360}>
         <PieChart>
           <Pie
             data={ageData}
@@ -30,8 +30,7 @@ const AgePieChart = ({ inView }) => {
             nameKey="age"
             cx="50%"
             cy="50%"
-            innerRadius={60}
-            outerRadius={120}
+            innerRadius={20}
             isAnimationActive={inView}
             animationDuration={1500}
             animationBegin={900}
@@ -57,7 +56,7 @@ const AgePieChart = ({ inView }) => {
             }}
             labelStyle={{ color: "#130066CC" }}
           />
-          <Legend />
+          <Legend  />
         </PieChart>
       </ResponsiveContainer>
     </>

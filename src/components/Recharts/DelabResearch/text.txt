@@ -1,0 +1,105 @@
+.section {
+  margin-bottom: 140px;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.treeBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 60px;
+}
+
+.fieldBox {
+  width: 100%;
+}
+
+.smallBox {
+  margin-left: 100px;
+}
+
+.smalllBox {
+  margin-right: 80px;
+}
+
+.label {
+  position: absolute;
+  margin-bottom: 20px;
+  color: #3485c8;
+  font-size: 20px;
+}
+
+.labelLast {
+  margin-bottom: 20px;
+  color: #3485c8;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+  .box,
+  .treeBox {
+    flex-direction: row;
+    /* align-items: center; */
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    margin-bottom: 140px;
+  }
+
+  .box {
+    width: 100%;
+    display: flex;
+
+    gap: 10px;
+  }
+
+  .treeBox {
+    display: flex;
+
+    width: 100%;
+    gap: 60px;
+  }
+
+  .fieldBox {
+    width: 100%;
+  }
+
+  .smallBox {
+    margin-left: 100px;
+  }
+
+  .smalllBox {
+    margin-right: 80px;
+  }
+
+  .label {
+    margin-bottom: 20px;
+    color: #3485c8;
+    font-size: 20px;
+  }
+
+  .labelLast {
+    margin-bottom: 20px;
+    color: #3485c8;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .box,
+  .treeBox {
+    flex-direction: row;
+    /* align-items: center; */
+  }
+}

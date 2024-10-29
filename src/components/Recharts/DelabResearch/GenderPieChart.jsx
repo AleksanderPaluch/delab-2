@@ -6,7 +6,7 @@ import {
   ResponsiveContainer,
   Legend,
 } from "recharts";
-import css from "./DelabResearch.module.css";
+import css from "./PieCharts.module.css";
 
 const genderData = [
   { gender: "Kobieta", count: 896, uv: 50 },
@@ -20,7 +20,7 @@ const GenderPieChart = ({ inView }) => {
   return (
     <>
       <p className={css.label} >Płeć</p>
-      <ResponsiveContainer width="100%" height={340}>
+      <ResponsiveContainer width="100%" height={360}>
         <PieChart>
           <Pie
             data={genderData}
@@ -28,8 +28,7 @@ const GenderPieChart = ({ inView }) => {
             nameKey="gender"
             cx="50%"
             cy="50%"
-            innerRadius={60}
-            outerRadius={120}
+            innerRadius={20}
             isAnimationActive={inView}
             animationDuration={1500}
             animationBegin={1300}

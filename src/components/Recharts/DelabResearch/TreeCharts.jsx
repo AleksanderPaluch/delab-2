@@ -1,5 +1,5 @@
 import { useInView } from "react-intersection-observer";
-import css from "./DelabResearch.module.css";
+import css from "./TreeCharts.module.css";
 
 import FieldTreemap from "./FieldTreemap";
 import FrequencyTreemap from "./FrequencyTreemap";

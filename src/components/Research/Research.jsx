@@ -31,7 +31,7 @@ const Research = () => {
           Nasza próba badawcza ma następującą strukture:
         </p>
         <PieCharts />
-        <TreeCharts />
+        {/* <TreeCharts /> */}
       </div>
     </section>
   );

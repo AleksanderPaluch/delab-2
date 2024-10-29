@@ -6,7 +6,7 @@ import {
   ResponsiveContainer,
   Legend,
 } from "recharts";
-import css from "./DelabResearch.module.css";
+import css from "./PieCharts.module.css";
 
 const data = [
   { name: "Studenci i studentki", count: 1222, uv: 69 },
@@ -19,7 +19,7 @@ const COLORS = ["#ff7474", "#3485C8", "#9a34ffcb"]; // Colors for each segment
 const PositionPieChart = ({ inView }) => (
   <>
     <p className={css.label} >Stanowisko на UW</p>
-    <ResponsiveContainer width="100%" height={396}>
+    <ResponsiveContainer width="100%" height={400}>
       <PieChart>
         <Pie
           data={data}
@@ -27,8 +27,8 @@ const PositionPieChart = ({ inView }) => (
           nameKey="name"
           cx="50%"
           cy="50%"
-          innerRadius={60}
-          outerRadius={120}
+          innerRadius={20}
+         
           fill="#ee1a1a84"
           isAnimationActive={inView}
           animationDuration={1500} // Longer animation duration for smoothness
