@@ -12,11 +12,11 @@ const Layout = ({ children }) => {
   const background = useTransform(
     scrollYProgress,
     [0, 1],
-    ["#ee1a1a84", "#3485C8"]
+    ["#ff7474", "#3485C8"]
   );
 
   // Додаємо opacity для контролю видимості
-  const opacity = useTransform(scrollYProgress, [0, 0.01], [0, 1]);
+  const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   useEffect(() => {
     // Показати прогрес-бар, як тільки починається скрол

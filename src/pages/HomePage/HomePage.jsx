@@ -9,14 +9,14 @@ const Research = lazy(() => import("../../components/Research/Research"));
 const HomePage = () => {
   return (
     <div>
-              <Hero />
-        <Recomendations />
-        <Research />
+      {/* <Hero /> */}
+      <Recomendations />
+      {/* <Research />
 
-        <Recomendations />
-        <Recomendations />
+      <Recomendations />
+      <Recomendations /> */}
     </div>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;

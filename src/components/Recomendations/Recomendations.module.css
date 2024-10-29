@@ -1,56 +1,79 @@
 .section {
-  padding: 40px;
-  /* margin-top: 200px; */
+  padding: 40px 20px;
   margin-bottom: 100px;
-  background-color: rgba(123, 17, 230, 0.241);
+  
 }
 
 .recomendBox {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  /* gap: 40px; */
 }
 
 .title {
   color: #0000008a;
-  font-size: 48px; 
-  line-height: 1.3;
-  margin: 0px 80px 80px; 
+  font-size: 30px;
+  line-height: 1.2;
+  margin-left: 40px;
+  margin-bottom: 24px;
 }
 
 .subTitle {
   color: #0000008a;
-  font-size: 28px;
-  line-height: 1.4;
-  margin-bottom: 24px;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 14px;
+  margin-left: 20px;
 }
 
 .list {
-  margin-left: 20px; /* 1.25em * 16px = 20px */
+  margin-left: 18px;
   position: relative;
   margin-bottom: 40px;
 }
 
 .item {
-  margin-bottom: 8px; 
-  font-size: 15.5px; 
+  font-size: 15.5px;
   line-height: 1.6;
   margin-bottom: 10px;
-  position: relative; 
+  position: relative;
 }
 
 .list .item:before {
-  /* Видалено зайвий пробіл */
-  content: "✔"; /* Можна замінити на інший символ, наприклад, номер або текст */
+  content: "✔";
   position: absolute;
-  left: -18px;
-  top: 1px; /* Виправлено позицію, щоб символ був вертикально вирівняний з текстом */
-  color: #0000008a; /* Колір маркера */
-  font-size: 12px; /* Розмір маркера */
+  left: -16px;
+  top: 2px;
+  color: #0800ff8a;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .title {
+    font-size: 38px;
+    margin: 0px 40px 40px;
+  }
+
+
+  .subTitle {
+    color: #0000008a;
+    font-size: 28px;
+    line-height: 1.4;
+    margin-bottom: 24px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
+
+  .title {
+    font-size: 48px;
+    margin: 0px 80px 60px;
+  }
+
+
   .recomendBox {
     flex-direction: row;
+    gap: 60px;
   }
 }
