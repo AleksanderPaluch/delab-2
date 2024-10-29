@@ -1,6 +1,6 @@
 import Reveal from "../Reveal/Reveal";
 import css from "./Hero.module.css";
-import film from "../../../assets/video/robor_laptop.mp4";
+import film from "../../../assets/video/robot_laptop.mp4";
 
 const Hero = () => {
   return (

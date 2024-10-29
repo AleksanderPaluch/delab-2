@@ -1,79 +1,106 @@
 .section {
-  padding: 160px 40px;
+  padding: 40px 40px;
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-bottom: 324px;
-  margin-bottom: 100px;
-  /* height: 100vh; */
+  height: 460px;
+
 }
 
 .video {
-  position: absolute;
-  top: 447px;
-  left: 68%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%) scale(0.69);
-  z-index: -1; 
-  object-fit: cover; 
+  display: none;
 }
 
 .content {
- margin-left: 40px;
-  width: 920px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 24px;
   position: relative;
   z-index: 1;
 }
 
 .title {
-  margin-left: 40px;
-  z-index: 999;
+  width: 215px;
   color: #0000008a;
-  font-size: 21px;
-  font-weight: 500;
-  
+  font-size: 30px;
+  line-height: 1.2;
 }
 
 .text {
-  margin-left: 40px;
-  width: 500px;
   color: #0000005f;
-  font-size: 21px;
-  font-weight: 500;
+  font-size: 17px;
   line-height: 28px;
 }
 
 .span {
   color: #e50303b6;
-  font-size: 23px;
- 
+  font-size: 37px;
 }
 .span:last-child {
   color: #024c8aa2;
 }
 
 @media screen and (min-width: 768px) {
-  .title {
-    font-size: 27px;
-  }
-  .span {
-    font-size: 30px;
+  .section {
+    padding: 100px 60px;
+    padding-left: 100px;
   }
 
+  .video {
+    display: flex;
+    position: absolute;
+    top: 280px;
+    left: 72%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%) scale(0.5);
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 28px;
+  }
+
+  .text {
+    width: 400px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .span {
+    font-size: 34px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
+  .section {
+    padding: 160px 180px;
+    height: 860px;
+  }
+
+  .content {
+    gap: 48px;
+  }
+
+  .video {
+    top: 440px;
+    left: 68%;
+    transform: translate(-50%, -50%) scale(0.67);
+  }
+
   .title {
     font-size: 48px;
+  }
+
+  .text {
+    width: 550px;
+    font-size: 28px;
+    line-height: 36px;
   }
   .span {
     font-size: 58px;
   }
-
 }
