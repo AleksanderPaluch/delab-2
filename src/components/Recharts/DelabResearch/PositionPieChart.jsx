@@ -14,7 +14,7 @@ const data = [
   { name: "Doktoranci i doktorantki", count: 135, uv: 8 },
 ];
 
-const COLORS = ["#ee1a1a84", "#3485C8", "#130066cb"]; // Colors for each segment
+const COLORS = ["#ff7474", "#3485C8", "#9a34ffcb"]; // Colors for each segment
 
 const PositionPieChart = ({ inView }) => (
   <>

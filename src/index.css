@@ -8,13 +8,13 @@
 :root {
 
   --title: #0000008a;
-  --blue: #0f60a2;
+  --blue: #3485C8;
   --grey: #36464e;
-  --darkBlue: #323f47;
+  --darkBlue: #9a34ffcb;
   --dark: #000000de;
   --white: #ffffff;
   --cream: #f0eff4d2;
-  --red: #ee1a1a;
+  --red: #ff7474;
   --green: #00ff1a;
  
   color: var(--dark);

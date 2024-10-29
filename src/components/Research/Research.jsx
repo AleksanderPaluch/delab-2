@@ -1,4 +1,6 @@
-import DelabResearch from "../Recharts/DelabResearch/DelabResearch";
+
+import PieCharts from "../Recharts/DelabResearch/PieCharts";
+import TreeCharts from "../Recharts/DelabResearch/treeCharts";
 import Reveal from "../Reveal/Reveal";
 import css from "./Research.module.css";
 
@@ -28,7 +30,8 @@ const Research = () => {
         <p className={css.subTitle}>
           Nasza próba badawcza ma następującą strukture:
         </p>
-        <DelabResearch />
+        <PieCharts />
+        <TreeCharts />
       </div>
     </section>
   );

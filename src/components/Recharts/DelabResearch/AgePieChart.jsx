@@ -16,7 +16,7 @@ const ageData = [
   { age: "55+", count: 93, uv: 5 },
 ];
 
-const COLORS = ["#ee1a1a84", "#3485C8", "#130066cb", "#ffc658", "#82ca9d"]; // Custom colors for each age group
+const COLORS = ["#ff7474", "#3485C8", "#9a34ffcb", "#ffc658", "#82ca9d"]; // Custom colors for each age group
 
 const AgePieChart = ({ inView }) => {
   return (
