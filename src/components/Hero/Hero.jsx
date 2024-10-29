@@ -1,8 +1,8 @@
 import Reveal from "../Reveal/Reveal";
-import css from "./Home.module.css";
+import css from "./Hero.module.css";
 import film from "../../../assets/video/robor_laptop.mp4";
 
-const Home = () => {
+const Hero = () => {
   return (
     <section className={css.section}>
       <video autoPlay muted loop playsInline className={css.video}>
@@ -16,8 +16,8 @@ const Home = () => {
           </Reveal>
           <Reveal>
             <h1 className={css.title}>
-              świadomym korzystaniu z <span className={css.span1}>AI</span> na{" "}
-              <span className={css.span2}>UW</span>
+              świadomym korzystaniu z <span className={css.span}>AI</span> na{" "}
+              <span className={css.span}>UW</span>
             </h1>
           </Reveal>
         </div>
@@ -34,4 +34,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Hero;

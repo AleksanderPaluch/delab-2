@@ -17,8 +17,8 @@
   width: auto;
   height: auto;
   transform: translate(-50%, -50%) scale(0.69);
-  z-index: -1; /* Відео буде позаду контенту */
-  object-fit: cover; /* Відео займе весь простір контейнера */
+  z-index: -1; 
+  object-fit: cover; 
 }
 
 .content {
@@ -40,12 +40,7 @@
   
 }
 
-
-
-
-
 .text {
- 
   margin-left: 40px;
   width: 500px;
   color: #0000005f;
@@ -54,37 +49,31 @@
   line-height: 28px;
 }
 
-.span1 {
+.span {
   color: #e50303b6;
   font-size: 23px;
-  font-weight: 700;
+ 
 }
-.span2 {
+.span:last-child {
   color: #024c8aa2;
-  font-size: 23px;
-  font-weight: 700;
 }
 
 @media screen and (min-width: 768px) {
   .title {
     font-size: 27px;
   }
-  .span1 {
+  .span {
     font-size: 30px;
   }
-  .span2 {
-    font-size: 30px;
-  }
+
 }
 
-@media screen and (min-width: 1360px) {
+@media screen and (min-width: 1440px) {
   .title {
     font-size: 48px;
   }
-  .span1 {
+  .span {
     font-size: 58px;
   }
-  .span2 {
-    font-size: 52px;
-  }
+
 }

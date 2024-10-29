@@ -13,6 +13,7 @@
 
 .treeBox {
   display: flex;
+  flex-direction: column;
   width: 100%;
   gap: 60px;
   
@@ -48,8 +49,9 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .box {
+  .box, .treeBox {
     flex-direction: row;
     /* align-items: center; */
   }
+
 }
