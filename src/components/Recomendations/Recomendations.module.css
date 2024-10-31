@@ -19,7 +19,7 @@
 }
 
 .subTitle {
-  color: #0000008a;
+
   font-size: 20px;
   line-height: 1.2;
   margin-bottom: 14px;
@@ -52,6 +52,8 @@
   
   .section {
     margin-bottom: 40px;
+   
+    padding-left: 80px;
   }
 
   .title {
@@ -73,10 +75,12 @@
 
   .section {
     margin-bottom: 100px;
+    padding-left: 120px;
   }
 
 
   .title {
+    color: #0000008a;
     font-size: 48px;
     margin: 0px 80px 60px;
   }

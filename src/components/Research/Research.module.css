@@ -30,7 +30,8 @@
 
 @media screen and (min-width: 768px) {
   .section {
-    /* margin-left: 60px;   */
+   
+    padding-left: 80px;
   }
 
   .title {
@@ -49,7 +50,8 @@
 
 @media screen and (min-width: 1440px) {
   .section {
-    /* margin-left: 60px;   */
+
+    padding-left: 120px;
   }
 
   .title {

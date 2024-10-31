@@ -19,14 +19,14 @@ const COLORS = ["#ff7474", "#3485C8", "#9a34ffcb"]; // Colors for each segment
 const PositionPieChart = ({ inView }) => (
   <>
     <p className={css.label} >Stanowisko na UW</p>
-    <ResponsiveContainer width="100%" height={window.innerWidth < 768 ? 270 : 396}>
+    <ResponsiveContainer width="100%" height={window.innerWidth < 768 ? 270 : 390}>
       <PieChart>
         <Pie
           data={data}
           dataKey="count"
           nameKey="name"
           cx="45%"
-          
+          cy={window.innerWidth < 1440 ? "54%" : "50%"}
           innerRadius={window.innerWidth < 1440 ? 30 : 40}
           outerRadius={window.innerWidth < 1440 ? 80 : 130}
          

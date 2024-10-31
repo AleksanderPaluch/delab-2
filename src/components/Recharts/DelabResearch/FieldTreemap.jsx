@@ -13,7 +13,7 @@ const CustomLabel = ({ x, y, width, height, uv, name }) => {
       x={x + width / 2}
       y={y + height / 2}
       textAnchor="middle"
-      fontSize={window.innerWidth < 1440 ? "14px" : "16x"}
+      fontSize={window.innerWidth < 1440 ? "11px" : "16x"}
       dominantBaseline="central"
     >
       {`${name} ${uv}%`}
@@ -28,7 +28,7 @@ const FieldTreemap = ({ inView }) => {
 
       <ResponsiveContainer
         width="100%"
-        height={window.innerWidth < 1440 ? 155 : 220}
+        height={window.innerWidth < 1440 ? 146 : 220}
       >
         <Treemap
           data={data}
@@ -36,8 +36,8 @@ const FieldTreemap = ({ inView }) => {
           nameKey="name"
           ratio={1 / 3}
           isAnimationActive={inView}
-          animationBegin={300}
-          animationDuration={1500}
+       
+          animationDuration={2000}
           animationEasing="ease-out"
           stroke="#130066cb"
           content={({ depth, x, y, width, height, index }) =>
