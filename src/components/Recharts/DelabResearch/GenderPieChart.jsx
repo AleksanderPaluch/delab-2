@@ -20,7 +20,7 @@ const GenderPieChart = ({ inView }) => {
   return (
     <>
       <p className={css.label} >Płeć</p>
-      <ResponsiveContainer width="100%" height={360}>
+      <ResponsiveContainer width="100%" height={window.innerWidth < 768 ? 270 : 360}>
         <PieChart>
           <Pie
             data={genderData}

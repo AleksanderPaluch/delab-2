@@ -6,7 +6,8 @@ import css from "./Research.module.css";
 
 const Research = () => {
   return (
-    <section className={css.section}>
+    <>
+     <section className={css.section}>
       <div className={css.box}>
         <Reveal amount="1">
           <h1 className={css.title} id="badanie DELab UW">
@@ -30,10 +31,14 @@ const Research = () => {
         <p className={css.subTitle}>
           Nasza próba badawcza ma następującą strukture:
         </p>
-        <PieCharts />
-        {/* <TreeCharts /> */}
+
       </div>
+
     </section>
+    <PieCharts />
+    <TreeCharts />
+    </>
+   
   );
 };
 

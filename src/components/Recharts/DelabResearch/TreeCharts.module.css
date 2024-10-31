@@ -1,0 +1,35 @@
+.section {
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.box {
+  width: 100%;
+}
+
+.label {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #3485c8;
+  font-size: 18px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    flex-direction: row;
+    gap: 120px;
+    padding: 0px 100px;
+  }
+  .label {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+}

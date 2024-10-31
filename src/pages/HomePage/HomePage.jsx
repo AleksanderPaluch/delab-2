@@ -9,9 +9,10 @@ const Research = lazy(() => import("../../components/Research/Research"));
 const HomePage = () => {
   return (
     <div>
-      {/* <Hero /> */}
-      {/* <Recomendations /> */}
+      <Hero />
+      <Recomendations />
       <Research />
+      <Recomendations />
 
     </div>
   );

@@ -78,7 +78,7 @@
 @media screen and (min-width: 1440px) {
   .section {
     padding: 160px 180px;
-    height: 860px;
+    height: 100vh;
   }
 
   .content {
@@ -88,16 +88,16 @@
   .video {
     top: 440px;
     left: 68%;
-    transform: translate(-50%, -50%) scale(0.67);
+    transform: translate(-50%, -50%) scale(0.5);
   }
 
   .title {
-    font-size: 48px;
+    font-size: 42px;
   }
 
   .text {
     width: 550px;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 36px;
   }
   .span {

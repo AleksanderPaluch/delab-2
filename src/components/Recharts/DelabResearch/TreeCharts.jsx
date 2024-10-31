@@ -9,11 +9,12 @@ const TreeCharts = () => {
 
   return (
     <section ref={ref} className={css.section}>
-    
+      <div className={css.box}>
         <FieldTreemap inView={inView} />
-
+      </div>
+      <div className={css.box}>
         <FrequencyTreemap inView={inView} />
-   
+      </div>
     </section>
   );
 };
