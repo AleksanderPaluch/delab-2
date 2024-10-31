@@ -21,25 +21,29 @@ const COLORS = ["#ff7474", "#3485C8", "#9a34ffcb", "#ffc658", "#82ca9d"]; // Cus
 const AgePieChart = ({ inView }) => {
   return (
     <>
-      <p className={css.label} >Wiek</p>
+      <p className={css.label}>Wiek</p>
       <ResponsiveContainer width="100%" height={360}>
         <PieChart>
           <Pie
             data={ageData}
             dataKey="count"
             nameKey="age"
-         cx="45%"
-            innerRadius={20}
+            cx="45%"
+      
+            innerRadius={window.innerWidth < 1440 ? 30 : 40}
+            outerRadius={window.innerWidth < 1440 ? 80 : 130}
             isAnimationActive={inView}
             animationDuration={1500}
             animationBegin={900}
             animationEasing="ease-out"
             label={(entry) => `${entry.uv}%`}
             labelLine={false}
-        
           >
             {ageData.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+              <Cell
+                key={`cell-${index}`}
+                fill={COLORS[index % COLORS.length]}
+              />
             ))}
           </Pie>
           <Tooltip
@@ -55,7 +59,7 @@ const AgePieChart = ({ inView }) => {
             }}
             labelStyle={{ color: "#130066CC" }}
           />
-          <Legend  />
+          <Legend />
         </PieChart>
       </ResponsiveContainer>
     </>

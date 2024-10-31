@@ -29,7 +29,7 @@
 body {
   color: var(--dark);
   margin: auto;
-
+  /* margin-left: 70px; */
 }
 
 a {
