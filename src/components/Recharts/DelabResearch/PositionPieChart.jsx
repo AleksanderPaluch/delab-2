@@ -19,14 +19,14 @@ const COLORS = ["#ff7474", "#3485C8", "#9a34ffcb"]; // Colors for each segment
 const PositionPieChart = ({ inView }) => (
   <>
     <p className={css.label} >Stanowisko на UW</p>
-    <ResponsiveContainer width="100%" height={400}>
+    <ResponsiveContainer width="100%" height={396}>
       <PieChart>
         <Pie
           data={data}
           dataKey="count"
           nameKey="name"
-          cx="50%"
-          cy="50%"
+          cx="45%"
+          
           innerRadius={20}
          
           fill="#ee1a1a84"
@@ -36,6 +36,7 @@ const PositionPieChart = ({ inView }) => (
           animationEasing="ease-out"
           label={(entry) => `${entry.uv}%`}
           labelLine={false}
+          
         >
           {data.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />

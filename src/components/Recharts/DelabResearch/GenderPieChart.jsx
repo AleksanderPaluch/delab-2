@@ -26,8 +26,7 @@ const GenderPieChart = ({ inView }) => {
             data={genderData}
             dataKey="count"
             nameKey="gender"
-            cx="50%"
-            cy="50%"
+           cx="45%"
             innerRadius={20}
             isAnimationActive={inView}
             animationDuration={1500}
