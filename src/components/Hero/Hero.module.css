@@ -43,7 +43,7 @@
 @media screen and (min-width: 768px) {
   .section {
     padding: 100px 60px;
-    padding-left: 100px;
+  
   }
 
   .video {
@@ -82,7 +82,7 @@
   }
 
   .content {
-    gap: 48px;
+    gap: 40px;
   }
 
   .video {
@@ -93,7 +93,7 @@
 
   .title {
     font-size: 48px;
-    margin-left: 40px;
+
   }
 
   .text {

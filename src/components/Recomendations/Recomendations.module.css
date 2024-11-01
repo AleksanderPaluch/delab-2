@@ -1,7 +1,7 @@
 .section {
   padding: 40px 20px;
   margin-bottom: 0px;
-  
+
 }
 
 .recomendBox {
@@ -19,7 +19,6 @@
 }
 
 .subTitle {
-
   font-size: 20px;
   line-height: 1.2;
   margin-bottom: 14px;
@@ -49,18 +48,15 @@
 }
 
 @media screen and (min-width: 768px) {
-  
   .section {
     margin-bottom: 40px;
-   
-    padding-left: 80px;
+    padding: 40px 40px;
   }
 
   .title {
     font-size: 38px;
     margin: 0px 40px 40px;
   }
-
 
   .subTitle {
     color: #0000008a;
@@ -72,19 +68,16 @@
 }
 
 @media screen and (min-width: 1440px) {
-
   .section {
     margin-bottom: 100px;
-    padding-left: 120px;
+    padding: 40px 60px;
   }
-
 
   .title {
     color: #0000008a;
     font-size: 48px;
     margin: 0px 80px 60px;
   }
-
 
   .recomendBox {
     flex-direction: row;
