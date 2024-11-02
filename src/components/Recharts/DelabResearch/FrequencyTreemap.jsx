@@ -2,11 +2,11 @@ import { Treemap, Tooltip, ResponsiveContainer, Cell } from "recharts";
 import css from "./TreeCharts.module.css";
 
 const data = [
-  { name: "Bardzo często", size: 324, uv: 18, fill: "#ff7474" },
-  { name: "Często", size: 390, uv: 22, fill: "#3485C8" },
-  { name: "Rzadko", size: 345, uv: 19, fill: "#9a34ffcb" },
-  { name: "Bardzo rzadko", size: 416, uv: 23, fill: "#ffc658" },
-  { name: "Nigdy", size: 303, uv: 17, fill: "#82ca9d" },
+  { name: "Bardzo często", size: 324, uv: 18, fill: "#4B4E6D" },
+  { name: "Często", size: 390, uv: 22, fill: "#7B7F9C" },
+  { name: "Rzadko", size: 345, uv: 19, fill: "#A6AAB0" },
+  { name: "Bardzo rzadko", size: 416, uv: 23, fill: "#C0C4CC" },
+  { name: "Nigdy", size: 303, uv: 17, fill: "#3485C8" },
 ];
 
 const CustomLabel = ({ x, y, width, height, uv, name }) => {
@@ -31,7 +31,7 @@ const FrequencyTreemap = ({ inView }) => {
       </p>
       <ResponsiveContainer
         width="100%"
-        height={window.innerWidth < 1440 ? 165 : 220}
+        height={window.innerWidth < 1440 ? 165 : 210}
       >
         <Treemap
           data={data}

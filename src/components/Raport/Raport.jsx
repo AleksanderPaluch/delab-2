@@ -1,12 +1,8 @@
 
-import css from './Raport.module.css'
+import css from "./Raport.module.css";
 
 const Raport = () => {
-  return (
-   <section className={css.section}>
+  return <section className={css.section}></section>;
+};
 
-   </section>
-  )
-}
-
-export default Raport
+export default Raport;

@@ -14,7 +14,15 @@ const genderData = [
   { gender: "Odmowa/Inna", count: 126, uv: 7 },
 ];
 
-const COLORS = ["#ff7474", "#3485C8", "#9a34ffcb"]; // Custom colors for each gender category
+const COLORS = [
+  "#4B4E6D",  // ciemny szary
+  "#A8A8A8",  // średni szary
+  "#3485C8",  // jasny szary
+  "#C0392B",  // intensywny czerwony
+  "#2980B9"   // intensywny niebieski
+];
+
+ // Custom colors for each gender category
 
 const GenderPieChart = ({ inView }) => {
   return (
@@ -28,8 +36,8 @@ const GenderPieChart = ({ inView }) => {
             nameKey="gender"
            cx="45%"
                
-           innerRadius={window.innerWidth < 1440 ? 30 : 40}
-           outerRadius={window.innerWidth < 1440 ? 80 : 130}
+           innerRadius={window.innerWidth < 1440 ? 30 : 60}
+           outerRadius={window.innerWidth < 1440 ? 80 : 120}
             isAnimationActive={inView}
             animationDuration={1500}
             animationBegin={1300}

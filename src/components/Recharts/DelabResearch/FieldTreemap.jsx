@@ -2,9 +2,9 @@ import css from "./TreeCharts.module.css";
 import { Treemap, Tooltip, ResponsiveContainer, Cell } from "recharts";
 
 const data = [
-  { name: "Nauki Społeczne", size: 736, uv: 41, fill: "#ff7474" },
-  { name: "Nauki Humanistyczne", size: 556, uv: 31, fill: "#3485C8" },
-  { name: "Nauki Ścisłe i Przyrodnicze", size: 486, uv: 28, fill: "#9a34ffcb" },
+  { name: "Nauki Społeczne", size: 736, uv: 41, fill: "#4B4E6D" },
+  { name: "Nauki Humanistyczne", size: 556, uv: 31, fill: "#7B7F9C" },
+  { name: "Nauki Ścisłe i Przyrodnicze", size: 486, uv: 28, fill: "#3485C8" },
 ];
 
 const CustomLabel = ({ x, y, width, height, uv, name }) => {
@@ -28,13 +28,13 @@ const FieldTreemap = ({ inView }) => {
 
       <ResponsiveContainer
         width="100%"
-        height={window.innerWidth < 1440 ? 146 : 220}
+        height={window.innerWidth < 1440 ? 146 : 210}
       >
         <Treemap
           data={data}
           dataKey="size"
           nameKey="name"
-          ratio={1 / 3}
+          ratio={3 / 3}
           isAnimationActive={inView}
        
           animationDuration={2000}

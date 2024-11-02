@@ -7,14 +7,14 @@
 
 @media screen and (min-width: 768px) {
     .section {
-        background-color: yellow;
+        background-color: rgba(66, 66, 9, 0.486);
         padding: 60px 24px;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .section {
-        background-color: yellowgreen;
+        background-color: rgba(94, 135, 13, 0.697);
         padding: 160px 40px;
     }
 } 

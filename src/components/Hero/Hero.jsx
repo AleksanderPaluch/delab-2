@@ -5,9 +5,9 @@ import film from "../../../assets/video/robot_laptop.mp4";
 const Hero = () => {
   return (
     <section className={css.section}>
-      <video autoPlay muted loop playsInline className={css.video}>
+      {/* <video autoPlay muted loop playsInline className={css.video}>
         <source src={film} type="video/mp4" />
-      </video>
+      </video> */}
 
       <div className={css.content}>
         <div>

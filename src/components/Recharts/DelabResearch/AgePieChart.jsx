@@ -16,7 +16,14 @@ const ageData = [
   { age: "55+", count: 93, uv: 5 },
 ];
 
-const COLORS = ["#ff7474", "#3485C8", "#9a34ffcb", "#ffc658", "#82ca9d"]; // Custom colors for each age group
+const COLORS = [
+  "#4B4E6D",  // stonowany granat
+  "#7B7F9C",  // jaśniejszy chłodny szary
+  "#A6AAB0",  // średni szary
+  "#C0C4CC",  // jasny szary
+  "#3485C8"   // bardzo jasny szary
+];
+
 
 const AgePieChart = ({ inView }) => {
   return (
@@ -30,8 +37,8 @@ const AgePieChart = ({ inView }) => {
             nameKey="age"
             cx="45%"
       
-            innerRadius={window.innerWidth < 1440 ? 30 : 40}
-            outerRadius={window.innerWidth < 1440 ? 80 : 130}
+            innerRadius={window.innerWidth < 1440 ? 30 : 60}
+            outerRadius={window.innerWidth < 1440 ? 80 : 120}
             isAnimationActive={inView}
             animationDuration={1500}
             animationBegin={900}

@@ -13,8 +13,14 @@ const data = [
   { name: "Pracownicy i pracowniczki naukowo dydaktyczne", count: 421, uv: 24 },
   { name: "Doktoranci i doktorantki", count: 135, uv: 8 },
 ];
+const COLORS = [
+  "#4B4E6D",  // ciemny szary
+  "#A8A8A8",  // średni szary
+  "#3485C8",  // jasny szary
+  "#C0392B",  // intensywny czerwony
+  "#2980B9"   // intensywny niebieski
+];
 
-const COLORS = ["#ff7474", "#3485C8", "#9a34ffcb"]; // Colors for each segment
 
 const PositionPieChart = ({ inView }) => (
   <>
@@ -27,8 +33,8 @@ const PositionPieChart = ({ inView }) => (
           nameKey="name"
           cx="45%"
           cy={window.innerWidth < 1440 ? "54%" : "50%"}
-          innerRadius={window.innerWidth < 1440 ? 30 : 40}
-          outerRadius={window.innerWidth < 1440 ? 80 : 130}
+          innerRadius={window.innerWidth < 1440 ? 30 : 60}
+          outerRadius={window.innerWidth < 1440 ? 80 : 120}
          
           fill="#ee1a1a84"
           isAnimationActive={inView}

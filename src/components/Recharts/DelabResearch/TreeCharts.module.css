@@ -32,8 +32,8 @@
 @media screen and (min-width: 1440px) {
   .section {
     flex-direction: row;
-    gap: 120px;
-    padding: 0px 120px;
+    gap: 40px;
+    padding: 0px 160px;
   }
   .label {
     font-size: 20px;

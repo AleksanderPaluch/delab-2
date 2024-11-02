@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
   const background = useTransform(
     scrollYProgress,
     [0, 1],
-    ["#ff7474", "#3485C8"]
+    ["#0000008a", "#3485C8"]
   );
 
   // Додаємо opacity для контролю видимості
