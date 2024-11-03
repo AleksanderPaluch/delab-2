@@ -2,9 +2,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 375px;
+  
   gap: 20px;
-  padding-bottom: 40px;
+  padding: 40px 10px;
 }
 
 .label {
