@@ -2,18 +2,18 @@ import Reveal from "../Reveal/Reveal";
 import css from "./Hero.module.css";
 import SideBarNav from "../SideBarNav/SideBarNav";
 
+
 const Hero = () => {
   return (
-    
-    
     <section className={css.section}>
       {/* <video autoPlay muted loop playsInline className={css.video}>
         <source src={film} type="video/mp4" />
       </video> */}
+
       <div className={css.sideBar}>
-      <SideBarNav />
+        <SideBarNav />
       </div>
-     
+
       <div className={css.content}>
         <div>
           <Reveal delay="0">

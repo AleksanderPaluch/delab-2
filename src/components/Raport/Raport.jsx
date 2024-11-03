@@ -1,5 +1,9 @@
 import Reveal from "../Reveal/Reveal";
 import css from "./Raport.module.css";
+import student from "../../../assets/svg/student.svg";
+import phd from "../../../assets/svg/phd.svg";
+import prof from "../../../assets/svg/professor.svg";
+import { ImTelegram } from "react-icons/im";
 
 const Raport = () => {
   return (
@@ -72,11 +76,30 @@ const Raport = () => {
       </ul>
 
       <Reveal>
-        <h2 className={css.subTitle} > W raporcie stosujemy następujące oznaczenia dla poszczególnych grup społeczności akademickiej UW:</h2>
+        <h2 className={css.subTitle}>
+          {" "}
+          W raporcie stosujemy następujące oznaczenia dla poszczególnych grup
+          społeczności akademickiej UW:
+        </h2>
         <ul className={css.iconsList}>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li className={css.item}>
+            <img className={css.icon} src={student} alt="student" />
+            <p className={css.label}>Studenci i studentki</p>
+          </li>
+          <li className={css.item}>
+            {" "}
+            <img className={css.icon} src={phd} alt="Badacze i badaczki" />
+            <p className={css.label}>Badacze i badaczki</p>
+          </li>
+          <li className={css.item}>
+            {" "}
+            <img
+              className={css.icon}
+              src={prof}
+              alt="Dydaktycy i dydaktyczki"
+            />
+            <p className={css.label}>Dydaktycy i dydaktyczki</p>
+          </li>
         </ul>
       </Reveal>
     </section>
