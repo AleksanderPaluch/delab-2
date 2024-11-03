@@ -33,7 +33,7 @@ import {
     { position: 18, title: "Badanie DeLab UW", id: "badanie-delab" },
     { position: 26, title: "Generatywna AI", id: "generatywna-ai" },
     { position: 34, title: "Narzędzie GenAI", id: "narzedzie-genai" },
-    { position: 42, title: "Wytyczne UW dla GenAI", id: "wytyczne-uw" },
+    { position: 42, title: "Wytyczne UW", id: "wytyczne-uw" },
   ];
   
   const SideBarNav = () => {

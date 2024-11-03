@@ -25,14 +25,16 @@
   margin-left: 20px;
 }
 
+
 .list {
+  text-align: justify;
   margin-left: 18px;
   position: relative;
   margin-bottom: 40px;
 }
 
 .item {
-  font-size: 15.5px;
+  font-size: 12.5px;
   line-height: 1.2;
   margin-bottom: 10px;
   position: relative;
@@ -43,7 +45,7 @@
   position: absolute;
   left: -16px;
   top: 2px;
-  color: #0800ff8a;
+  color: var(--blue);
   font-size: 12px;
 }
 
@@ -54,22 +56,23 @@
   }
 
   .title {
-    font-size: 38px;
+    font-size: 32px;
     margin: 0px 40px 40px;
   }
 
   .subTitle {
     color: #0000008a;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 1.4;
     margin-left: 40px;
     margin-bottom: 24px;
   }
+
+
 }
 
 @media screen and (min-width: 1440px) {
   .section {
-    /* background-color: rgba(255, 255, 0, 0.519); */
     margin-bottom: 100px;
     padding: 40px 80px;
   }
@@ -83,5 +86,9 @@
   .recomendBox {
     flex-direction: row;
     gap: 60px;
+  }
+
+  .item {
+    font-size: 15.5px;
   }
 }

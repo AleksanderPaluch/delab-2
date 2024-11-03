@@ -2,11 +2,13 @@
 import { lazy } from "react";
 import "./App.css";
 import Layout from "./components/Layout/Layout";
-import SideBarNav from "./components/SideBarNav/SideBarNav";
+
 
 
 import Hero from "./components/Hero/Hero";
 
+
+const Raport = lazy(() => import("./components/Raport/Raport"));
 const Recomendations = lazy(() =>
   import("./components/Recomendations/Recomendations")
 );
@@ -16,9 +18,10 @@ const Footer = lazy(() => import("./components/Footer/Footer"));
 function App() {
   return (
     <>
-      <SideBarNav />
+  
       <Layout>
         <Hero />
+        <Raport />
         <Recomendations />
         <Research />
       </Layout>

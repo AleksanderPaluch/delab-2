@@ -3,9 +3,9 @@ import css from "./Recomendations.module.css";
 
 const Recomendations = () => {
   return (
-    <section className={css.section}>
+    <section className={css.section} id="rekomendacje">
         <Reveal   amount="0.99">
-          <h1 className={css.title} id="rekomendacje">
+          <h1 className={css.title} >
             Rekomendacje
           </h1>
         </Reveal>
