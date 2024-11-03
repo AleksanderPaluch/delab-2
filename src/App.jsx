@@ -1,25 +1,26 @@
-import { Route, Routes } from "react-router-dom";
+
 import { lazy } from "react";
 import "./App.css";
 import Layout from "./components/Layout/Layout";
 import SideBarNav from "./components/SideBarNav/SideBarNav";
-import Footer from "./components/Footer/Footer";
+
 
 import Hero from "./components/Hero/Hero";
 
-
-const Recomendations = lazy(() => import("./components/Recomendations/Recomendations"));
+const Recomendations = lazy(() =>
+  import("./components/Recomendations/Recomendations")
+);
 const Research = lazy(() => import("./components/Research/Research"));
+const Footer = lazy(() => import("./components/Footer/Footer"));
 
 function App() {
   return (
-    <>  
-     <SideBarNav />
+    <>
+      <SideBarNav />
       <Layout>
-       <Hero/>
-       <Recomendations />
-       <Research />
-
+        <Hero />
+        <Recomendations />
+        <Research />
       </Layout>
       <Footer />
     </>
