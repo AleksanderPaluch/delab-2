@@ -7,7 +7,7 @@
 
 }
 
-.video {
+.sideBar {
   display: none;
 }
 
@@ -41,6 +41,11 @@
 }
 
 @media screen and (min-width: 768px) {
+
+  .sideBar {
+    display: flex;
+  }
+
   .section {
     padding: 100px 60px;
   

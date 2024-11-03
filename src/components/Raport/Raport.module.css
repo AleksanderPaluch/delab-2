@@ -1,20 +1,134 @@
 .section {
-    background-color: blueviolet;
-    width: 100%;
-    height: 100vh;
-    padding: 40px 10px;
+  padding: 40px;
+}
+
+.list {
+  text-align: justify;
+}
+
+.title {
+  color: #0000008a;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-left: 20px;
+  margin-bottom: 24px;
+}
+
+.subTitle {
+  color: #0000008a;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  margin-left: 20px;
+}
+
+.text {
+  font-size: 12.5px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.span {
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.iconsList {
+  display: flex;
+  padding: 0px 0px;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  width: 44px;
+}
+
+.label {
+  font-size: 8px;
+  line-height: 1.2;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-    .section {
-        background-color: rgba(66, 66, 9, 0.486);
-        padding: 60px 24px;
-    }
+  .section {
+    padding: 40px 40px;
+  }
+
+  .title {
+    font-size: 32px;
+    margin: 0px 20px 40px;
+  }
+
+  .subTitle {
+    color: #0000008a;
+    font-size: 24px;
+    line-height: 1.4;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 44px;
+  }
+
+  .iconsList {
+    justify-content: space-around;
+  }
+
+  .icon {
+    width: 64px;
+  }
+
+  .label {
+    font-size: 12.5px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .section {
-        background-color: rgba(94, 135, 13, 0.697);
-        padding: 160px 40px;
-    }
-} 
+  .section {
+    padding: 40px 80px 180px 80px;
+  }
+
+  .title {
+    color: #0000008a;
+    font-size: 48px;
+    line-height: 1.3;
+    margin: 0px 80px 40px;
+  }
+
+  .subTitle {
+    color: #0000008a;
+    font-size: 24px;
+    line-height: 1.4;
+    margin: 40px 80px 80px;
+  }
+
+  .text {
+    margin-top: 40px;
+    font-size: 15.5px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+
+  .list {
+    display: flex;
+    gap: 44px;
+  }
+
+  .icon {
+    width: 84px;
+  }
+
+  .item {
+    gap: 18px;
+  }
+
+  .label {
+    font-size: 15.5px;
+  }
+}

@@ -3,10 +3,10 @@ import css from "./Recomendations.module.css";
 
 const Recomendations = () => {
   return (
-    <section className={css.section}>
+    <section className={css.section} id="dobre-praktyki">
         <Reveal   amount="0.99">
-          <h1 className={css.title} id="rekomendacje">
-            Rekomendacje
+          <h1 className={css.title} >
+          Dobre Praktyki
           </h1>
         </Reveal>
       <div className={css.recomendBox}>

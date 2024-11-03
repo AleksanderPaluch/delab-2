@@ -1,27 +1,29 @@
-import { Route, Routes } from "react-router-dom";
+
 import { lazy } from "react";
 import "./App.css";
 import Layout from "./components/Layout/Layout";
-import SideBarNav from "./components/SideBarNav/SideBarNav";
-import Footer from "./components/Footer/Footer";
 
 
-const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
-const AuthorsPage = lazy(() => import("./pages/AuthorsPage/AuthorsPage"));
+
+import Hero from "./components/Hero/Hero";
+
+
+const Raport = lazy(() => import("./components/Raport/Raport"));
+const Recomendations = lazy(() =>
+  import("./components/Recomendations/Recomendations")
+);
+const Research = lazy(() => import("./components/Research/Research"));
+const Footer = lazy(() => import("./components/Footer/Footer"));
 
 function App() {
   return (
-    <>  
-     <SideBarNav />
+    <>
+  
       <Layout>
-        <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/authors" element={<AuthorsPage />} />
-    
-          
-        </Routes>
-
-
+        <Hero />
+        <Raport />
+        <Recomendations />
+        <Research />
       </Layout>
       <Footer />
     </>

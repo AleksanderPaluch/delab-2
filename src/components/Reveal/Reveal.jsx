@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 
-const Reveal = ({ children, width = "fit-content", slide = true, amount = 0.1}) => {
+const Reveal = ({ children, width = "fit-content", slide = true, amount = 0.25}) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount });
   const mainControls = useAnimation();
