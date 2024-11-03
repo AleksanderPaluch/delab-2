@@ -1,6 +1,6 @@
 
 import PieCharts from "../Recharts/DelabResearch/PieCharts";
-import TreeCharts from "../Recharts/DelabResearch/treeCharts";
+import TreeCharts from "../Recharts/DelabResearch/TreeCharts";
 import Reveal from "../Reveal/Reveal";
 import css from "./Research.module.css";
 
