@@ -12,7 +12,7 @@ const Hero = () => {
       <div className={css.content}>
         <div>
           <Reveal delay="0">
-            <h1 className={css.title}>Przewodnik po bezpiecznym i</h1>
+            <h1 className={css.title}>d</h1>
           </Reveal>
           <Reveal>
             <h1 className={css.title}>
