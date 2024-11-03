@@ -1,20 +1,4 @@
-const AnimatedStudent = () => {
-    return (
-        
-    )
-}
-
-
-
-
-
-
-
-
-
-
-
-
+import React from 'react'
 
 const AnimatedSVG = () => {
   return (

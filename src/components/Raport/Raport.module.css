@@ -91,7 +91,7 @@
 
 @media screen and (min-width: 1440px) {
   .section {
-    padding: 40px 80px;
+    padding: 40px 80px 180px 80px;
   }
 
   .title {
@@ -105,7 +105,7 @@
     color: #0000008a;
     font-size: 24px;
     line-height: 1.4;
-    margin: 0px 80px 60px;
+    margin: 40px 80px 80px;
   }
 
   .text {
@@ -125,7 +125,7 @@
   }
 
   .item {
-    gap: 14px;
+    gap: 18px;
   }
 
   .label {

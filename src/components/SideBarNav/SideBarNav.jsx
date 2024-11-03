@@ -29,7 +29,7 @@ import {
   // line of the sidebar
   const navItems = [
     { position: 2, title: "O Raporcie", id: "o-raporcie" },
-    { position: 10, title: "Rekomendacje", id: "rekomendacje" },
+    { position: 10, title: "Dobre Praktyki", id: "dobre-praktyki" },
     { position: 18, title: "Badanie DeLab UW", id: "badanie-delab" },
     { position: 26, title: "Generatywna AI", id: "generatywna-ai" },
     { position: 34, title: "Narzędzie GenAI", id: "narzedzie-genai" },

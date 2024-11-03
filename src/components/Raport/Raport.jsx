@@ -3,7 +3,6 @@ import css from "./Raport.module.css";
 import student from "../../../assets/svg/student.svg";
 import phd from "../../../assets/svg/phd.svg";
 import prof from "../../../assets/svg/professor.svg";
-import { ImTelegram } from "react-icons/im";
 
 const Raport = () => {
   return (
@@ -75,22 +74,29 @@ const Raport = () => {
         </Reveal>
       </ul>
 
-      <Reveal>
-        <h2 className={css.subTitle}>
+      <h2 className={css.subTitle}>
+        {" "}
+        W raporcie stosujemy następujące oznaczenia dla poszczególnych grup
+        społeczności akademickiej UW:
+      </h2>
+      <ul className={css.iconsList}>
+        <Reveal>
           {" "}
-          W raporcie stosujemy następujące oznaczenia dla poszczególnych grup
-          społeczności akademickiej UW:
-        </h2>
-        <ul className={css.iconsList}>
           <li className={css.item}>
             <img className={css.icon} src={student} alt="student" />
             <p className={css.label}>Studenci i studentki</p>
-          </li>
+          </li>{" "}
+        </Reveal>
+        <Reveal>
+          {" "}
           <li className={css.item}>
             {" "}
             <img className={css.icon} src={phd} alt="Badacze i badaczki" />
             <p className={css.label}>Badacze i badaczki</p>
-          </li>
+          </li>{" "}
+        </Reveal>
+        <Reveal>
+          {" "}
           <li className={css.item}>
             {" "}
             <img
@@ -100,8 +106,8 @@ const Raport = () => {
             />
             <p className={css.label}>Dydaktycy i dydaktyczki</p>
           </li>
-        </ul>
-      </Reveal>
+        </Reveal>
+      </ul>
     </section>
   );
 };
