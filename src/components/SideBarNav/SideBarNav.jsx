@@ -28,13 +28,12 @@ import {
   // Position key will place the title on the Nth
   // line of the sidebar
   const navItems = [
-    { position: 1, title: "Rekomendacje" },
-    { position: 10, title: "Rekomendacje" },
-    { position: 20, title: "Badanie DeLab UW" },
-    { position: 30, title: "Services" },
-    { position: 40, title: "Pricing" },
-    { position: 50, title: "huju" },
- 
+    { position: 2, title: "O Raporcie", id: "o-raporcie" },
+    { position: 10, title: "Rekomendacje", id: "rekomendacje" },
+    { position: 18, title: "Badanie DeLab UW", id: "badanie-delab" },
+    { position: 26, title: "Generatywna AI", id: "generatywna-ai" },
+    { position: 34, title: "Narzędzie GenAI", id: "narzedzie-genai" },
+    { position: 42, title: "Wytyczne UW dla GenAI", id: "wytyczne-uw" },
   ];
   
   const SideBarNav = () => {
@@ -67,6 +66,7 @@ import {
               isHovered={isHovered}
               mouseY={mouseY}
               key={i}
+              id={linkContent?.id}
             />
           );
         })}
@@ -81,19 +81,15 @@ import {
     damping: 20,
   };
   
-  const LinkLine = ({ mouseY, isHovered, title }) => {
+  const LinkLine = ({ mouseY, isHovered, title, id }) => {
     const ref = useRef(null);
     const distance = useTransform(mouseY, (val) => {
       const bounds = ref.current?.getBoundingClientRect();
-  
       return val - (bounds?.y || 0) - (bounds?.height || 0) / 2;
     });
   
-    // Styles for non-link lines
     const lineWidthRaw = useTransform(distance, [-80, 0, 80], [15, 100, 15]);
     const lineWidth = useSpring(lineWidthRaw, SPRING_OPTIONS);
-  
-    // Styles for link lines
     const linkWidth = useSpring(25, SPRING_OPTIONS);
   
     useEffect(() => {
@@ -106,7 +102,7 @@ import {
   
     if (title) {
       return (
-        <a href="#">
+        <a href={`#${id}`}>
           <motion.div
             ref={ref}
             className="group relative bg-neutral-500 transition-colors hover:bg-custom-blue"
@@ -118,8 +114,8 @@ import {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className="absolute left-0 top-0 z-10 w-full pt-2 font-bold uppercase text-neutral-500 transition-colors group-hover:text-custom-blue">
-                
+                  className="absolute left-0 top-0 z-10 w-full pt-2 font-bold uppercase text-neutral-500 transition-colors group-hover:text-custom-blue"
+                >
                   {title}
                 </motion.span>
               )}
@@ -137,6 +133,7 @@ import {
       );
     }
   };
+  
   
   export default SideBarNav;
 

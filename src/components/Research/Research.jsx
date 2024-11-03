@@ -7,7 +7,7 @@ import css from "./Research.module.css";
 const Research = () => {
   return (
     <>
-     <section className={css.section}>
+     <section className={css.section} id="badanie-delab">
       <div className={css.box}>
         <Reveal amount="1">
           <h1 className={css.title} id="badanie DELab UW">
