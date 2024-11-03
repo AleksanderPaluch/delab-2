@@ -9,9 +9,9 @@ import {
 import css from "./PieCharts.module.css";
 
 const data = [
-  { name: "Studenci i studentki", count: 1222, uv: 69 },
-  { name: "Pracownicy i pracowniczki naukowo dydaktyczne", count: 421, uv: 24 },
-  { name: "Doktoranci i doktorantki", count: 135, uv: 8 },
+  { name: "Studenci", count: 1222, uv: 69 },
+  { name: "Dydaktycy", count: 421, uv: 24 },
+  { name: "Doktoranci", count: 135, uv: 8 },
 ];
 const COLORS = [
   "#4B4E6D",  // ciemny szary
@@ -25,14 +25,14 @@ const COLORS = [
 const PositionPieChart = ({ inView }) => (
   <>
     <p className={css.label} >Stanowisko na UW</p>
-    <ResponsiveContainer width="100%" height={window.innerWidth < 768 ? 270 : 390}>
+    <ResponsiveContainer width="100%" height={window.innerWidth < 768 ? 270 : 360}>
       <PieChart>
         <Pie
           data={data}
           dataKey="count"
           nameKey="name"
           cx="45%"
-          cy={window.innerWidth < 1440 ? "54%" : "53.5%"}
+        cy="55%"
           innerRadius={window.innerWidth < 1440 ? 30 : 60}
           outerRadius={window.innerWidth < 1440 ? 80 : 120}
          

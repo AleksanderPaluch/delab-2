@@ -12,7 +12,7 @@
 }
 
 .label {
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
   color: #3485c8;
   font-size: 18px;
@@ -37,6 +37,6 @@
   }
   .label {
     font-size: 20px;
-    margin-bottom: 14px;
+    margin-bottom: 24px;
   }
 }

@@ -36,7 +36,7 @@ const AgePieChart = ({ inView }) => {
             dataKey="count"
             nameKey="age"
             cx="45%"
-      
+            cy="55%"
             innerRadius={window.innerWidth < 1440 ? 30 : 60}
             outerRadius={window.innerWidth < 1440 ? 80 : 120}
             isAnimationActive={inView}
