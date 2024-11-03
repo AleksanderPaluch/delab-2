@@ -1,4 +1,5 @@
 import { lazy } from "react";
+import Footer from "../../components/Footer/Footer";
 
 const Hero = lazy(() => import("../../components/Hero/Hero"));
 const Recomendations = lazy(() =>
@@ -13,7 +14,7 @@ const HomePage = () => {
       <Recomendations />
       <Research />
       <Recomendations />
-
+ 
     </div>
   );
 };

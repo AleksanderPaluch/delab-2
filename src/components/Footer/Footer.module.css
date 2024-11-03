@@ -4,10 +4,11 @@
   background-color: #222222;
   color: #fff;
   text-align: center;
+  z-index: 50; /*
 }
 
 .footerNavBox {
-  z-index: 10; /* Піднімає посилання на передній план */
+  z-index: 40; /* Піднімає посилання на передній план */
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -85,13 +86,17 @@
 
 }
 
-@media screen and (min-width: 1360px) {
+@media screen and (min-width: 1440px) {
   .footer {
     padding: 14px 140px;
   }
 
   .footerSocialBox {
-    padding: 10px 140px;
+    padding: 14px 140px;
     justify-content: flex-end;
+  }
+
+  .item {
+    font-size: 30px;
   }
 }

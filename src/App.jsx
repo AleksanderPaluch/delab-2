@@ -3,6 +3,7 @@ import { lazy } from "react";
 import "./App.css";
 import Layout from "./components/Layout/Layout";
 import SideBarNav from "./components/SideBarNav/SideBarNav";
+import Footer from "./components/Footer/Footer";
 
 
 const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
@@ -22,6 +23,7 @@ function App() {
 
 
       </Layout>
+      <Footer />
     </>
   );
 }
