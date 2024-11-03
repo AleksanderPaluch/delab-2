@@ -5,22 +5,20 @@ import Layout from "./components/Layout/Layout";
 import SideBarNav from "./components/SideBarNav/SideBarNav";
 import Footer from "./components/Footer/Footer";
 
+import Hero from "./components/Hero/Hero";
 
-const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
-const AuthorsPage = lazy(() => import("./pages/AuthorsPage/AuthorsPage"));
+
+const Recomendations = lazy(() => import("./components/Recomendations/Recomendations"));
+const Research = lazy(() => import("./components/Research/Research"));
 
 function App() {
   return (
     <>  
      <SideBarNav />
       <Layout>
-        <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/authors" element={<AuthorsPage />} />
-    
-          
-        </Routes>
-
+       <Hero/>
+       <Recomendations />
+       <Research />
 
       </Layout>
       <Footer />
