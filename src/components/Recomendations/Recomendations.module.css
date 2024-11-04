@@ -1,5 +1,5 @@
 .section {
-  padding: 40px 20px;
+  padding: 40px 0px;
   margin-bottom: 0px;
 
 }
@@ -12,13 +12,14 @@
 
 .title {
   color: #0000008a;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 1.2;
-  margin-left: 40px;
+  margin-left: 30px;
   margin-bottom: 24px;
 }
 
 .subTitle {
+  color: #0000008a;
   font-size: 20px;
   line-height: 1.2;
   margin-bottom: 14px;
@@ -28,7 +29,7 @@
 
 .list {
   text-align: justify;
-  margin-left: 18px;
+ padding: 0px 10px;
   position: relative;
   margin-bottom: 40px;
 }
@@ -43,10 +44,10 @@
 .list .item:before {
   content: "✔";
   position: absolute;
-  left: -16px;
+  left: -10px;
   top: 2px;
   color: var(--blue);
-  font-size: 12px;
+  font-size: 10px;
 }
 
 @media screen and (min-width: 768px) {
