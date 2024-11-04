@@ -1,5 +1,5 @@
 .section {
-  padding: 40px 0px;
+  padding: 40px 10px;
   margin-bottom: 0px;
 
 }
@@ -41,14 +41,7 @@
   position: relative;
 }
 
-.list .item:before {
-  content: "‣";
-  position: absolute;
-  left: -9px;
-  top: -5px;
-  color: var(--blue);
-  font-size: 20px;
-}
+
 
 @media screen and (min-width: 768px) {
   .section {
@@ -93,11 +86,5 @@
     font-size: 15.5px;
   }
 
-  .list .item:before {
-    
-    position: absolute; left: -12px;
-    top: -6px;
-    color: var(--blue);
-    font-size: 24px;
-  }
+
 }
