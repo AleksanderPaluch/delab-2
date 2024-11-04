@@ -28,12 +28,12 @@ import {
   // Position key will place the title on the Nth
   // line of the sidebar
   const navItems = [
-    { position: 2, title: "O Raporcie", id: "o-raporcie" },
-    { position: 10, title: "Dobre Praktyki", id: "dobre-praktyki" },
-    { position: 18, title: "Badanie DeLab UW", id: "badanie-delab" },
-    { position: 26, title: "Generatywna AI", id: "generatywna-ai" },
-    { position: 34, title: "Narzędzie GenAI", id: "narzedzie-genai" },
-    { position: 42, title: "Wytyczne UW", id: "wytyczne-uw" },
+    { position: 10, title: "O Raporcie", id: "o-raporcie" },
+    { position: 17, title: "Dobre Praktyki", id: "dobre-praktyki" },
+    { position: 24, title: "Badanie DeLab UW", id: "badanie-delab" },
+    { position: 31, title: "Generatywna AI", id: "generatywna-ai" },
+    { position: 38, title: "Narzędzie GenAI", id: "narzedzie-genai" },
+    { position: 45, title: "Wytyczne UW", id: "wytyczne-uw" },
   ];
   
   const SideBarNav = () => {
@@ -50,11 +50,11 @@ import {
           mouseY.set(Infinity);
           setIsHovered(false);
         }}
-        className="fixed right-0 top-0 flex h-screen flex-col items-end justify-between py-4 pl-8"
+        className="fixed right-0 top-0 flex h-screen flex-col items-end justify-between py-4 pl-4"
         style={{
-          zIndex: 10, // Вищий z-index для навігаційної панелі
-          backgroundColor: isHovered ? "#e2e2e2d8" : "#ffffff", // Змінюваний фон
-          transition: "background-color 0.8s ease" // Плавний перехід кольору
+          zIndex: 100, // Вищий z-index для навігаційної панелі
+          backgroundColor:  "#e2e2e2eb"
+         
         }}
       >
         {Array.from(Array(NUM_LINES).keys()).map((i) => {
@@ -88,13 +88,13 @@ import {
       return val - (bounds?.y || 0) - (bounds?.height || 0) / 2;
     });
   
-    const lineWidthRaw = useTransform(distance, [-80, 0, 80], [15, 100, 15]);
+    const lineWidthRaw = useTransform(distance, [-80, 0, 80], [20, 100, 20]);
     const lineWidth = useSpring(lineWidthRaw, SPRING_OPTIONS);
     const linkWidth = useSpring(25, SPRING_OPTIONS);
   
     useEffect(() => {
       if (isHovered) {
-        linkWidth.set(280);
+        linkWidth.set(320);
       } else {
         linkWidth.set(25);
       }
@@ -114,7 +114,13 @@ import {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className="absolute left-0 top-0 z-10 w-full pt-2 font-bold uppercase text-neutral-500 transition-colors group-hover:text-custom-blue"
+                  className="absolute left-0  z-10 w-full pt-0 font-bold   text-neutral-500 transition-colors group-hover:text-custom-blue"
+                  style={{
+                    top: "-24px",
+                    fontSize: "24px",
+                    fontWeight: "400"
+                    
+                  }}
                 >
                   {title}
                 </motion.span>

@@ -24,8 +24,9 @@ function App() {
         <Raport />
         <Recomendations />
         <Research />
+        <Footer />
       </Layout>
-      <Footer />
+   
     </>
   );
 }
