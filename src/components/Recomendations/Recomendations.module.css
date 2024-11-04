@@ -42,18 +42,18 @@
 }
 
 .list .item:before {
-  content: "✔";
+  content: "‣";
   position: absolute;
-  left: -10px;
-  top: 2px;
+  left: -9px;
+  top: -5px;
   color: var(--blue);
-  font-size: 10px;
+  font-size: 20px;
 }
 
 @media screen and (min-width: 768px) {
   .section {
-    margin-bottom: 40px;
-    padding: 40px 40px;
+
+    padding: 40px 20px;
   }
 
   .title {
@@ -91,5 +91,13 @@
 
   .item {
     font-size: 15.5px;
+  }
+
+  .list .item:before {
+    
+    position: absolute; left: -12px;
+    top: -6px;
+    color: var(--blue);
+    font-size: 24px;
   }
 }

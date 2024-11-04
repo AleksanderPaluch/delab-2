@@ -18,31 +18,7 @@ const Footer = ({
 }) => {
   return (
     <>
-      <div className={css.footer}>
-        {/* Додамо стиль prevlink, якщо prevPage не null */}
-        <div className={`${css.footerNavBox} ${prevPage ? css.prevlink : ""}`}>
-          {prevPage && (
-            <NavLink className={css.redirectLink} to={prevPage}>
-              <FaAngleDoubleLeft className={css.icon} />
-              <div className={css.linkbox}>
-                <p>Poprzednia strona</p>
-                <p className={css.text}> {prevPageName} </p>
-              </div>
-            </NavLink>
-          )}
-          {nextPage ? (
-            <NavLink className={css.redirectLink} to={nextPage}>
-              <div className={css.linkbox}>
-                <p>Następna strona</p>
-                <p className={css.text}> {nextPageName} </p>
-              </div>
-              <FaAngleDoubleRight className={css.icon} />
-            </NavLink>
-          ) : (
-            ""
-          )}
-        </div>
-      </div>
+
       <div className={css.footerSocialBox}>
         <ul className={css.list}>
           <li className={css.item}>

@@ -20,12 +20,12 @@
     flex-direction: row;
     width: 768px;
     gap: 0;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
   }
   .label {
     margin-left: 0;
     position: absolute;
-    top: 30px;
+    top: 16px;
   }
 
   .label:nth-child(3) {
@@ -39,7 +39,7 @@
 
 @media screen and (min-width: 1440px) {
   .section {
-    padding: 0px 80px 120px 120px;
+    padding: 0px 80px 80px 120px;
     width: 1440px;
   }
 
