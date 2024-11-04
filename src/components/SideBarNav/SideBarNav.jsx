@@ -54,7 +54,7 @@ import {
         className="fixed right-0 top-0 flex h-screen flex-col items-end justify-between py-4 pl-10"
         style={{
           zIndex: 100,  // Вищий z-index для навігаційної панелі
-          backgroundColor:  isHovered ? "#eeeeeee1" : "#ffffff",
+          backgroundColor:  isHovered ? "#eeeeeee1" : "#ffffff00",
           transition: "background-color 1s ease",
         }}
       >

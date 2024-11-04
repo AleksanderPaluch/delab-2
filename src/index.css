@@ -19,7 +19,7 @@
   --white: #ffffff;
   --cream: #C0C4CC;
   --red: #ff7474;
-  --green: #e2e2e2eb;
+  --green: #eeeeeee1;
 
   color: var(--dark);
   background-color: var(--white);
