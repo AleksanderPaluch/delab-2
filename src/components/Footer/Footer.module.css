@@ -1,6 +1,6 @@
 .footerSocialBox {
   z-index: 10;
-  width: 375px;
+  width: 355px;
   margin: auto;
   border-top-left-radius: 20px; /* Adjust the radius as needed */
   border-top-right-radius: 20px;
@@ -29,6 +29,19 @@
   color: var(--white);
 }
 
+
+@media screen and (min-width: 768px) {
+
+
+  .footerSocialBox {
+
+    width: 728px;
+    padding: 4px 40px;
+    
+  }
+
+
+}
 
 
 @media screen and (min-width: 1440px) {

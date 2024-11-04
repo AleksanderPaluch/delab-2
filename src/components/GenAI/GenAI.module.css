@@ -1,0 +1,108 @@
+.section {
+  padding: 40px 10px;
+  text-align: justify;
+}
+
+.title {
+  color: #0000008a;
+  font-size: 28px;
+  line-height: 1.2;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.subTitle {
+  color: #0000008a;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 14px;
+  margin-left: 20px;
+}
+
+.text {
+  font-size: 12.5px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.videoBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 40px 20px;
+
+  }
+
+  .title {
+    font-size: 32px;
+    margin: 0px 40px 20px;
+  }
+
+  .subTitle {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-left: 40px;
+    margin-bottom: 24px;
+  }
+
+
+
+  .videoBox {
+   
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .textBox {
+    width: 47.5%;
+  }
+
+  .videoBox {
+
+    margin-bottom: 40px;
+  }
+
+  .box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 80;
+    
+  }
+
+  .smallBox {
+    
+    width: 50%;
+  }
+
+  .smallBox:last-child {
+    margin-left: 60px;
+   
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    margin-bottom: 100px;
+    padding: 40px 80px;
+  }
+
+  .title {
+    font-size: 48px;
+    margin: 0px 80px 20px;
+  }
+
+  .text {
+    font-size: 15.5px;
+  }
+}
