@@ -15,8 +15,9 @@
   color: #0000008a;
   font-size: 20px;
   line-height: 1.2;
-  margin-bottom: 14px;
+  margin-bottom: 20px;
   margin-left: 20px;
+  text-align: center;
 }
 
 .text {
@@ -25,10 +26,20 @@
   margin-bottom: 10px;
 }
 
+.span {
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.span:last-child {
+  margin-left: 4px;
+}
+
 .videoBox {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  gap: 20px;
 }
 
 .box {
@@ -39,7 +50,6 @@
 @media screen and (min-width: 768px) {
   .section {
     padding: 40px 20px;
-
   }
 
   .title {
@@ -54,20 +64,16 @@
     margin-bottom: 24px;
   }
 
-
-
   .videoBox {
-   
-    flex-direction: row;
-    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
   }
 
   .textBox {
-    width: 47.5%;
   }
 
   .videoBox {
-
     margin-bottom: 40px;
   }
 
@@ -76,19 +82,15 @@
     display: flex;
     flex-direction: row;
     gap: 80;
-    
   }
 
   .smallBox {
-    
     width: 50%;
   }
 
   .smallBox:last-child {
     margin-left: 60px;
-   
   }
-
 }
 
 @media screen and (min-width: 1440px) {
@@ -99,10 +101,31 @@
 
   .title {
     font-size: 48px;
-    margin: 0px 80px 20px;
+    margin: 0px 80px 30px;
+  }
+
+  .subTitle {
+    margin-bottom: 36px;
   }
 
   .text {
     font-size: 15.5px;
+  }
+
+  .span {
+    margin-right: 6px;
+  }
+
+  .span:last-child {
+    margin-left: 6px;
+  }
+
+  .videoBox {
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .textBox {
+    width: 47.5%;
   }
 }
