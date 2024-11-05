@@ -1,5 +1,7 @@
 import css from "./GenAI.module.css";
 import Reveal from "../Reveal/Reveal";
+import GenAIBarChart from "../Recharts/GenAI/GenAIBarChart";
+
 const GenAI = () => {
   return (
     <>
@@ -90,11 +92,9 @@ const GenAI = () => {
             <Reveal>
               {" "}
               <p className={css.text}>
-                Nowsze modele wykorzystują tzw.  
-                <span className={css.span}>
-                   uczenie samonadzorowane.
-                </span>
-                W takim podejściu modele tekstowe są trenowane na ogromnych
+                Nowsze modele wykorzystują tzw.
+                <span className={css.span}>uczenie samonadzorowane.</span>W
+                takim podejściu modele tekstowe są trenowane na ogromnych
                 zbiorach danych, takich jak fora internetowe, książki czy
                 artykuły naukowe, co pozwala im samodzielnie generować
                 predykcje. Na przykład modele takiej jak GPT, na podstawie kilku
@@ -132,6 +132,7 @@ const GenAI = () => {
             </Reveal>
           </div>
         </div>
+        <GenAIBarChart />
       </section>
     </>
   );

@@ -1,6 +1,7 @@
 .section {
   padding: 40px 10px;
   text-align: justify;
+  
 }
 
 .title {
@@ -122,6 +123,8 @@
 
   .videoBox {
     flex-direction: row;
+
+    justify-content: flex-start;
     gap: 60px;
   }
 

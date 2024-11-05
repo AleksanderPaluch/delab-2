@@ -1,12 +1,8 @@
-
 import { lazy } from "react";
 import "./App.css";
 import Layout from "./components/Layout/Layout";
 
-
-
 import Hero from "./components/Hero/Hero";
-
 
 const Raport = lazy(() => import("./components/Raport/Raport"));
 const Recomendations = lazy(() =>
@@ -19,17 +15,15 @@ const Footer = lazy(() => import("./components/Footer/Footer"));
 function App() {
   return (
     <>
-  
       <Layout>
-        <Hero />
+        {/* <Hero />
         <Raport />
         <Recomendations />
-        <Research />
+        <Research /> */}
+        <Recomendations />
         <GenAI />
-        <Footer />
-
+        {/* <Footer /> */}
       </Layout>
-   
     </>
   );
 }
