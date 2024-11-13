@@ -24,7 +24,7 @@ import {
 
   
   // Total number of lines on the side of the page
-  const NUM_LINES = window.innerWidth < 768 ? 100 : window.innerWidth > 1439 ? 100 : 80;
+  const NUM_LINES = window.innerWidth < 768 ? 100 : window.innerWidth > 1440 ? 100 : 80;
   
   // Position key will place the title on the Nth
   // line of the sidebar

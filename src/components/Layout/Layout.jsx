@@ -19,8 +19,8 @@ const Layout = ({ children }) => {
   const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   useEffect(() => {
-    // Показати прогрес-бар, як тільки починається скрол
-    const unsubscribe = scrollYProgress.onChange((value) => {
+    // Show progress bar as soon as scrolling begins
+    const unsubscribe = scrollYProgress.on("change", (value) => {
       if (value > 0 && !showProgressBar) {
         setShowProgressBar(true);
       }

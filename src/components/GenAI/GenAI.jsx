@@ -3,6 +3,7 @@ import Reveal from "../Reveal/Reveal";
 import GenAIBarChart from "../Recharts/GenAIRechart/GenAIBarChart";
 
 
+
 const GenAI = () => {
 
 
@@ -52,16 +53,16 @@ const GenAI = () => {
             </Reveal>
           </div>
 
-          <iframe
+          {/* <iframe
             width={window.innerWidth < 768 ? "355" : "550"}
             height={window.innerWidth < 768 ? "200" : "310"}
-            src="https://www.youtube.com/embed/i6ssUfaSbg4?si=23CdvTsBDQOqaiNo"
+            src="https://www.youtube-nocookie.com/embed/i6ssUfaSbg4?si=23CdvTsBDQOqaiNo"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
-          ></iframe>
+          ></iframe> */}
         </div>
         <div className={css.box}>
           <div className={css.smallBox}>
