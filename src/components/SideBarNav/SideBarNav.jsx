@@ -55,7 +55,7 @@ import {
         style={{
           zIndex: 100,  // Вищий z-index для навігаційної панелі
           backgroundColor:  isHovered ? "#eeeeeee1" : "#ffffff00",
-          transition: "background-color 1s ease",
+          transition: "background-color 0.5s ease",
         }}
       >
         {Array.from(Array(NUM_LINES).keys()).map((i) => {

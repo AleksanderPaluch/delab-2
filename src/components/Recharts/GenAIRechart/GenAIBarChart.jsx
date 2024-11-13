@@ -9,7 +9,7 @@ import {
   Legend,
 } from "recharts";
 import css from "./GenAIBarChart.module.css";
-import { useInView } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const data1 = [
   {
@@ -66,11 +66,10 @@ const data2 = [
 ];
 
 const FieldBarChart = () => {
-
-  
+  const { ref: bar, inView } = useInView();
 
   return (
-    <section className={css.section}  >
+    <section ref={bar} className={css.section}>
       <p className={css.label}>Generatywna AI ...</p>
 
       <ResponsiveContainer
@@ -80,7 +79,7 @@ const FieldBarChart = () => {
         <BarChart
           data={data1}
           layout="vertical"
-          
+
           // barSize={15}
         >
           <CartesianGrid strokeDasharray="3 3" />
@@ -112,13 +111,30 @@ const FieldBarChart = () => {
 
           {window.innerWidth < 768 ? "" : <Legend layout="vertical" />}
 
-          <Bar dataKey="Zgadzam się" stackId="a" fill="#4B4E6D" />
+          <Bar
+            dataKey="Zgadzam się"
+            stackId="a"
+            fill="#4B4E6D"
+            isAnimationActive={inView}
+            animationDuration={1500} // Longer animation duration for smoothness
+            animationEasing="ease-out"
+          />
           <Bar
             dataKey="Ani się nie zgadzam, ani zgadzam"
             stackId="a"
             fill="#7B7F9C"
+            isAnimationActive={inView}
+            animationDuration={1500} // Longer animation duration for smoothness
+            animationEasing="ease-out"
           />
-          <Bar dataKey="Nie zgadzam się" stackId="a" fill="#3485C8" />
+          <Bar
+            dataKey="Nie zgadzam się"
+            stackId="a"
+            fill="#3485C8"
+            isAnimationActive={inView}
+            animationDuration={1500} // Longer animation duration for smoothness
+            animationEasing="ease-out"
+          />
         </BarChart>
       </ResponsiveContainer>
 
@@ -159,13 +175,30 @@ const FieldBarChart = () => {
           />
           {window.innerWidth > 768 ? "" : <Legend layout="vertical" />}
 
-          <Bar dataKey="Zgadzam się" stackId="a" fill="#4B4E6D" />
+          <Bar
+            dataKey="Zgadzam się"
+            stackId="a"
+            fill="#4B4E6D"
+            isAnimationActive={inView}
+            animationDuration={1500} // Longer animation duration for smoothness
+            animationEasing="ease-out"
+          />
           <Bar
             dataKey="Ani się nie zgadzam, ani zgadzam"
             stackId="a"
             fill="#7B7F9C"
+            isAnimationActive={inView}
+            animationDuration={1500} // Longer animation duration for smoothness
+            animationEasing="ease-out"
           />
-          <Bar dataKey="Nie zgadzam się" stackId="a" fill="#3485C8" />
+          <Bar
+            dataKey="Nie zgadzam się"
+            stackId="a"
+            fill="#3485C8"
+            isAnimationActive={inView}
+            animationDuration={1500} // Longer animation duration for smoothness
+            animationEasing="ease-out"
+          />
         </BarChart>
       </ResponsiveContainer>
     </section>

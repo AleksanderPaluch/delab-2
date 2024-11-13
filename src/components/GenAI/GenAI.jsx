@@ -9,7 +9,7 @@ const GenAI = () => {
 
   return (
     <>
-      <section className={css.section} id="generatywna-ai">
+      <section  className={css.section} id="generatywna-ai">
         <Reveal>
           <h1 className={css.title}>Generatywna AI</h1>
         </Reveal>
@@ -138,7 +138,7 @@ const GenAI = () => {
         </div>
      
       </section>
-      <GenAIBarChart  />
+      <GenAIBarChart   />
     </>
   );
 };
