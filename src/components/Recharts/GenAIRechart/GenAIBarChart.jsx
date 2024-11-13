@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import {
   BarChart,
   Bar,
@@ -68,34 +69,49 @@ const data2 = [
 const FieldBarChart = () => {
   const { ref: bar, inView } = useInView();
 
+  const [responsiveSettings, setResponsiveSettings] = useState(getResponsiveSettings());
+
+  function getResponsiveSettings() {
+    const width = window.innerWidth;
+    return {
+      yAxisWidth: width < 1440 ? 150 : 240,
+      fontSize: width < 768 ? 11 : width > 1439 ? 14 : 12.5,
+      containerWidth: width < 768 ? "100%" : "50%",
+      containerHeight1: width < 768 ? 328 : 400,
+      containerHeight2: width < 768 ? 400 : 328,
+      showLegend: width > 768,
+      showLegend2: width < 768,
+    };
+  }
+
+  useEffect(() => {
+    const handleResize = () => {
+      setResponsiveSettings(getResponsiveSettings());
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <section ref={bar} className={css.section}>
       <p className={css.label}>Generatywna AI ...</p>
 
       <ResponsiveContainer
-        width={window.innerWidth < 768 ? "100%" : "50%"}
-        height={window.innerWidth < 768 ? 328 : 400}
+        className={css.responsiveContainer}
+        width={responsiveSettings.containerWidth}
+        height={responsiveSettings.containerHeight1}
       >
-        <BarChart
-          data={data1}
-          layout="vertical"
-
-          // barSize={15}
-        >
+        <BarChart data={data1} layout="vertical">
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis type="number" domain={[0, 100]} />
           <YAxis
             className={css.yaxis}
             dataKey="statement"
             type="category"
-            width={window.innerWidth < 1439 ? 160 : 240}
+            width={responsiveSettings.yAxisWidth}
             tick={{
-              fontSize:
-                window.innerWidth < 768
-                  ? 11
-                  : window.innerWidth > 1439
-                  ? 14
-                  : 12.5,
+              fontSize: responsiveSettings.fontSize,
             }}
             tickLine={false}
           />
@@ -108,15 +124,13 @@ const FieldBarChart = () => {
             }}
             labelStyle={{ color: "#130066CC" }}
           />
-
-          {window.innerWidth < 768 ? "" : <Legend layout="vertical" />}
-
+          {responsiveSettings.showLegend && <Legend layout="vertical" />}
           <Bar
             dataKey="Zgadzam się"
             stackId="a"
             fill="#4B4E6D"
             isAnimationActive={inView}
-            animationDuration={1500} // Longer animation duration for smoothness
+            animationDuration={1500}
             animationEasing="ease-out"
           />
           <Bar
@@ -124,7 +138,7 @@ const FieldBarChart = () => {
             stackId="a"
             fill="#7B7F9C"
             isAnimationActive={inView}
-            animationDuration={1500} // Longer animation duration for smoothness
+            animationDuration={1500}
             animationEasing="ease-out"
           />
           <Bar
@@ -132,35 +146,25 @@ const FieldBarChart = () => {
             stackId="a"
             fill="#3485C8"
             isAnimationActive={inView}
-            animationDuration={1500} // Longer animation duration for smoothness
+            animationDuration={1500}
             animationEasing="ease-out"
           />
         </BarChart>
       </ResponsiveContainer>
 
       <ResponsiveContainer
-        width={window.innerWidth < 768 ? "100%" : "50%"}
-        height={window.innerWidth < 768 ? 400 : 328}
+        width={responsiveSettings.containerWidth}
+        height={responsiveSettings.containerHeight2}
       >
-        <BarChart
-          data={data2}
-          layout="vertical"
-
-          // barSize={15}
-        >
+        <BarChart data={data2} layout="vertical">
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis type="number" domain={[0, 100]} />
           <YAxis
             dataKey="statement"
             type="category"
-            width={window.innerWidth < 1439 ? 160 : 240}
+            width={responsiveSettings.yAxisWidth}
             tick={{
-              fontSize:
-                window.innerWidth < 768
-                  ? 11
-                  : window.innerWidth > 1439
-                  ? 14
-                  : 12.5,
+              fontSize: responsiveSettings.fontSize,
             }}
             tickLine={false}
           />
@@ -173,14 +177,13 @@ const FieldBarChart = () => {
             }}
             labelStyle={{ color: "#130066CC" }}
           />
-          {window.innerWidth > 768 ? "" : <Legend layout="vertical" />}
-
+             {responsiveSettings.showLegend2 && <Legend layout="vertical" />}
           <Bar
             dataKey="Zgadzam się"
             stackId="a"
             fill="#4B4E6D"
             isAnimationActive={inView}
-            animationDuration={1500} // Longer animation duration for smoothness
+            animationDuration={1500}
             animationEasing="ease-out"
           />
           <Bar
@@ -188,7 +191,7 @@ const FieldBarChart = () => {
             stackId="a"
             fill="#7B7F9C"
             isAnimationActive={inView}
-            animationDuration={1500} // Longer animation duration for smoothness
+            animationDuration={1500}
             animationEasing="ease-out"
           />
           <Bar
@@ -196,7 +199,7 @@ const FieldBarChart = () => {
             stackId="a"
             fill="#3485C8"
             isAnimationActive={inView}
-            animationDuration={1500} // Longer animation duration for smoothness
+            animationDuration={1500}
             animationEasing="ease-out"
           />
         </BarChart>
