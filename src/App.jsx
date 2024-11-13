@@ -18,10 +18,10 @@ function App() {
   return (
     <>
       <Layout>
-        {/* <Hero />
+        <Hero />
         <Raport />
         <Recomendations />
-        <Research /> */}
+        <Research />
 
         <GenAI />
 

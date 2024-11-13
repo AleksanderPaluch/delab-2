@@ -1,5 +1,6 @@
 import { Treemap, Tooltip, ResponsiveContainer, Cell } from "recharts";
 import css from "./TreeCharts.module.css";
+import { useEffect, useState } from "react";
 
 const data = [
   { name: "Bardzo często", size: 324, uv: 18, fill: "#4B4E6D" },
@@ -9,13 +10,13 @@ const data = [
   { name: "Nigdy", size: 303, uv: 17, fill: "#3485C8" },
 ];
 
-const CustomLabel = ({ x, y, width, height, uv, name }) => {
+const CustomLabel = ({ x, y, width, height, uv, name, fontSize }) => {
   return (
     <text
       x={x + width / 2}
       y={y + height / 2}
       textAnchor="middle"
-      fontSize={window.innerWidth < 1440 ? "12px" : "16x"}
+      fontSize={fontSize}
       dominantBaseline="central"
     >
       {`${name} ${uv}%`}
@@ -24,6 +25,27 @@ const CustomLabel = ({ x, y, width, height, uv, name }) => {
 };
 
 const FrequencyTreemap = ({ inView }) => {
+  const [responsiveSettings, setResponsiveSettings] = useState(
+    getResponsiveSettings()
+  );
+
+  function getResponsiveSettings() {
+    const width = window.innerWidth;
+    return {
+      containerHeight: width < 1440 ? 146 : 210,
+      fontSize: width < 1440 ? "11px" : "16px",
+    };
+  }
+
+  useEffect(() => {
+    const handleResize = () => {
+      setResponsiveSettings(getResponsiveSettings());
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
       <p className={css.label}>
@@ -31,7 +53,7 @@ const FrequencyTreemap = ({ inView }) => {
       </p>
       <ResponsiveContainer
         width="100%"
-        height={window.innerWidth < 1440 ? 165 : 210}
+        height={responsiveSettings.containerHeight}
       >
         <Treemap
           data={data}
@@ -39,9 +61,7 @@ const FrequencyTreemap = ({ inView }) => {
           nameKey="name"
           ratio={4 / 3}
           isAnimationActive={inView}
-     
           animationDuration={2000}
-       
           stroke="#130066cb"
           content={({ depth, x, y, width, height, index }) =>
             depth === 1 ? (
@@ -61,11 +81,11 @@ const FrequencyTreemap = ({ inView }) => {
                   height={height}
                   uv={data[index].uv}
                   name={data[index].name}
+                  fontSize={responsiveSettings.fontSize}
                 />
               </g>
             ) : null
           }
-         
         >
           <Tooltip
             formatter={(value, name, props) => {

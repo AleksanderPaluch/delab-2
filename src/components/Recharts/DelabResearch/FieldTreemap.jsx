@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import css from "./TreeCharts.module.css";
 import { Treemap, Tooltip, ResponsiveContainer, Cell } from "recharts";
 
@@ -7,13 +8,13 @@ const data = [
   { name: "Nauki Ścisłe i Przyrodnicze", size: 486, uv: 28, fill: "#3485C8" },
 ];
 
-const CustomLabel = ({ x, y, width, height, uv, name }) => {
+const CustomLabel = ({ x, y, width, height, uv, name, fontSize }) => {
   return (
     <text
       x={x + width / 2}
       y={y + height / 2}
       textAnchor="middle"
-      fontSize={window.innerWidth < 1440 ? "11px" : "16x"}
+      fontSize={fontSize}
       dominantBaseline="central"
     >
       {`${name} ${uv}%`}
@@ -22,21 +23,36 @@ const CustomLabel = ({ x, y, width, height, uv, name }) => {
 };
 
 const FieldTreemap = ({ inView }) => {
+  const [responsiveSettings, setResponsiveSettings] = useState(getResponsiveSettings());
+
+  function getResponsiveSettings() {
+    const width = window.innerWidth;
+    return {
+      containerHeight: width < 1440 ? 146 : 210,
+      fontSize: width < 1440 ? "11px" : "16px",
+    };
+  }
+
+  useEffect(() => {
+    const handleResize = () => {
+      setResponsiveSettings(getResponsiveSettings());
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
       <p className={css.label}>Dziedzina</p>
 
-      <ResponsiveContainer
-        width="100%"
-        height={window.innerWidth < 1440 ? 146 : 210}
-      >
+      <ResponsiveContainer width="100%" height={responsiveSettings.containerHeight}>
         <Treemap
           data={data}
           dataKey="size"
           nameKey="name"
           ratio={3 / 3}
           isAnimationActive={inView}
-       
           animationDuration={2000}
           animationEasing="ease-out"
           stroke="#130066cb"
@@ -50,7 +66,6 @@ const FieldTreemap = ({ inView }) => {
                   height={height}
                   fill={data[index].fill}
                   stroke="#ffffff"
-                  
                 />
                 <CustomLabel
                   x={x}
@@ -59,11 +74,11 @@ const FieldTreemap = ({ inView }) => {
                   height={height}
                   uv={data[index].uv}
                   name={data[index].name}
+                  fontSize={responsiveSettings.fontSize}
                 />
               </g>
             ) : null
           }
-      
         >
           {data.map((entry, index) => (
             <Cell key={index} fill={entry.fill} />
