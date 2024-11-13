@@ -2,7 +2,10 @@ import css from "./GenAI.module.css";
 import Reveal from "../Reveal/Reveal";
 import GenAIBarChart from "../Recharts/GenAI/GenAIBarChart";
 
+
 const GenAI = () => {
+
+
   return (
     <>
       <section className={css.section} id="generatywna-ai">
@@ -132,8 +135,9 @@ const GenAI = () => {
             </Reveal>
           </div>
         </div>
-        <GenAIBarChart />
+     
       </section>
+      <GenAIBarChart  />
     </>
   );
 };

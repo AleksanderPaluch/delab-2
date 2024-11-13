@@ -67,86 +67,107 @@ const data2 = [
 
 const FieldBarChart = () => {
 
-
+  
 
   return (
-    <section className={css.section}>
+    <section className={css.section}  >
       <p className={css.label}>Generatywna AI ...</p>
-      <div style={{ display: "flex", gap: "40px" }}>
-        <ResponsiveContainer width="50%" height={400}>
-          <BarChart
-            data={data1}
-            layout="vertical"
 
-            // barSize={15}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis type="number" domain={[0, 100]} />
-            <YAxis
-              className={css.yaxis}
-              dataKey="statement"
-              type="category"
-              width={240}
-              tick={{ fontSize: 14 }}
-              tickLine={false}
-            />
-            <Tooltip
-              formatter={(value, name) => [`${value}%`, name]}
-              contentStyle={{
-                backgroundColor: "#f0eff4d2",
-                borderRadius: "12px",
-                color: "#130066cb",
-              }}
-              labelStyle={{ color: "#130066CC" }}
-            />
-            <Legend layout="vertical" />
-            <Bar dataKey="Zgadzam się" stackId="a" fill="#4B4E6D"  />
-            <Bar
-              dataKey="Ani się nie zgadzam, ani zgadzam"
-              stackId="a"
-              fill="#7B7F9C"
-            />
-            <Bar dataKey="Nie zgadzam się" stackId="a" fill="#3485C8" />
-          </BarChart>
-        </ResponsiveContainer>
+      <ResponsiveContainer
+        width={window.innerWidth < 768 ? "100%" : "50%"}
+        height={window.innerWidth < 768 ? 328 : 400}
+      >
+        <BarChart
+          data={data1}
+          layout="vertical"
+          
+          // barSize={15}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis type="number" domain={[0, 100]} />
+          <YAxis
+            className={css.yaxis}
+            dataKey="statement"
+            type="category"
+            width={window.innerWidth < 1439 ? 160 : 240}
+            tick={{
+              fontSize:
+                window.innerWidth < 768
+                  ? 11
+                  : window.innerWidth > 1439
+                  ? 14
+                  : 12.5,
+            }}
+            tickLine={false}
+          />
+          <Tooltip
+            formatter={(value, name) => [`${value}%`, name]}
+            contentStyle={{
+              backgroundColor: "#f0eff4d2",
+              borderRadius: "12px",
+              color: "#130066cb",
+            }}
+            labelStyle={{ color: "#130066CC" }}
+          />
 
-        {/* Second Column */}
-        <ResponsiveContainer width="50%" height={328}>
-          <BarChart
-            data={data2}
-            layout="vertical"
+          {window.innerWidth < 768 ? "" : <Legend layout="vertical" />}
 
-            // barSize={15}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis type="number" domain={[0, 100]} />
-            <YAxis
-              dataKey="statement"
-              type="category"
-              width={240}
-              tick={{ fontSize: 14 }}
-              tickLine={false}
-            />
-            <Tooltip
-              formatter={(value, name) => [`${value}%`, name]}
-              contentStyle={{
-                backgroundColor: "#f0eff4d2",
-                borderRadius: "12px",
-                color: "#130066cb",
-              }}
-              labelStyle={{ color: "#130066CC" }}
-            />
+          <Bar dataKey="Zgadzam się" stackId="a" fill="#4B4E6D" />
+          <Bar
+            dataKey="Ani się nie zgadzam, ani zgadzam"
+            stackId="a"
+            fill="#7B7F9C"
+          />
+          <Bar dataKey="Nie zgadzam się" stackId="a" fill="#3485C8" />
+        </BarChart>
+      </ResponsiveContainer>
 
-            <Bar dataKey="Zgadzam się" stackId="a" fill="#4B4E6D" />
-            <Bar
-              dataKey="Ani się nie zgadzam, ani zgadzam"
-              stackId="a"
-              fill="#7B7F9C"
-            />
-            <Bar dataKey="Nie zgadzam się" stackId="a" fill="#3485C8" />
-          </BarChart>
-        </ResponsiveContainer>
-      </div>
+      <ResponsiveContainer
+        width={window.innerWidth < 768 ? "100%" : "50%"}
+        height={window.innerWidth < 768 ? 400 : 328}
+      >
+        <BarChart
+          data={data2}
+          layout="vertical"
+
+          // barSize={15}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis type="number" domain={[0, 100]} />
+          <YAxis
+            dataKey="statement"
+            type="category"
+            width={window.innerWidth < 1439 ? 160 : 240}
+            tick={{
+              fontSize:
+                window.innerWidth < 768
+                  ? 11
+                  : window.innerWidth > 1439
+                  ? 14
+                  : 12.5,
+            }}
+            tickLine={false}
+          />
+          <Tooltip
+            formatter={(value, name) => [`${value}%`, name]}
+            contentStyle={{
+              backgroundColor: "#f0eff4d2",
+              borderRadius: "12px",
+              color: "#130066cb",
+            }}
+            labelStyle={{ color: "#130066CC" }}
+          />
+          {window.innerWidth > 768 ? "" : <Legend layout="vertical" />}
+
+          <Bar dataKey="Zgadzam się" stackId="a" fill="#4B4E6D" />
+          <Bar
+            dataKey="Ani się nie zgadzam, ani zgadzam"
+            stackId="a"
+            fill="#7B7F9C"
+          />
+          <Bar dataKey="Nie zgadzam się" stackId="a" fill="#3485C8" />
+        </BarChart>
+      </ResponsiveContainer>
     </section>
   );
 };

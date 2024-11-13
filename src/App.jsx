@@ -22,6 +22,7 @@ function App() {
         <Research /> */}
         <Recomendations />
         <GenAI />
+        <Recomendations />
         {/* <Footer /> */}
       </Layout>
     </>
