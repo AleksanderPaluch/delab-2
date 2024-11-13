@@ -20,7 +20,7 @@ function App() {
         <Raport />
         <Recomendations />
         <Research /> */}
-        <Recomendations />
+        {/* <Recomendations /> */}
         <GenAI />
         <Recomendations />
         {/* <Footer /> */}
