@@ -54,6 +54,7 @@ const FieldTreemap = ({ inView }) => {
           ratio={3 / 3}
           isAnimationActive={inView}
           animationDuration={2000}
+          animationBegin={500}
           animationEasing="ease-out"
           stroke="#130066cb"
           content={({ depth, x, y, width, height, index }) =>

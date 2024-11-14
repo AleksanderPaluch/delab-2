@@ -132,6 +132,7 @@ const FieldBarChart = () => {
             isAnimationActive={inView}
             animationDuration={1500}
             animationEasing="ease-out"
+            animationBegin={500}
           />
           <Bar
             dataKey="Ani się nie zgadzam, ani zgadzam"
@@ -140,6 +141,7 @@ const FieldBarChart = () => {
             isAnimationActive={inView}
             animationDuration={1500}
             animationEasing="ease-out"
+            animationBegin={500}
           />
           <Bar
             dataKey="Nie zgadzam się"
@@ -148,6 +150,7 @@ const FieldBarChart = () => {
             isAnimationActive={inView}
             animationDuration={1500}
             animationEasing="ease-out"
+            animationBegin={500}
           />
         </BarChart>
       </ResponsiveContainer>
@@ -185,6 +188,7 @@ const FieldBarChart = () => {
             isAnimationActive={inView}
             animationDuration={1500}
             animationEasing="ease-out"
+            animationBegin={500}
           />
           <Bar
             dataKey="Ani się nie zgadzam, ani zgadzam"
@@ -193,6 +197,7 @@ const FieldBarChart = () => {
             isAnimationActive={inView}
             animationDuration={1500}
             animationEasing="ease-out"
+            animationBegin={500}
           />
           <Bar
             dataKey="Nie zgadzam się"
@@ -201,6 +206,7 @@ const FieldBarChart = () => {
             isAnimationActive={inView}
             animationDuration={1500}
             animationEasing="ease-out"
+            animationBegin={500}
           />
         </BarChart>
       </ResponsiveContainer>

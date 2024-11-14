@@ -62,6 +62,7 @@ const FrequencyTreemap = ({ inView }) => {
           ratio={4 / 3}
           isAnimationActive={inView}
           animationDuration={2000}
+          animationBegin={500}
           stroke="#130066cb"
           content={({ depth, x, y, width, height, index }) =>
             depth === 1 ? (
