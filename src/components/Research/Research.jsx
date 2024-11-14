@@ -35,8 +35,8 @@ const Research = () => {
       </div>
 
     </section>
-    {/* <PieCharts />
-    <TreeCharts /> */}
+    <PieCharts />
+    <TreeCharts />
     </>
    
   );

@@ -21,7 +21,7 @@
   }
 
   .label {
-    left: 20px;
+    left: 40px;
     top: -10px;
     font-size: 24px;
   }
@@ -35,7 +35,7 @@
   .label {
     font-size: 24px;
     top: 24px;
-    left: 24px;
+    left: 120px;
   }
 
 }

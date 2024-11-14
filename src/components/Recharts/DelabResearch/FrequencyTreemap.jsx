@@ -87,6 +87,9 @@ const FrequencyTreemap = ({ inView }) => {
             ) : null
           }
         >
+          {data.map((entry, index) => (
+            <Cell key={index} fill={entry.fill} />
+          ))}
           <Tooltip
             formatter={(value, name, props) => {
               switch (name) {
@@ -100,15 +103,15 @@ const FrequencyTreemap = ({ inView }) => {
                   ];
                 case "Rzadko":
                   return [
-                    `Rzadko, przynajmniej 2 razy w miesiącu: ${value}(${props.payload.uv}%)`,
+                    `Rzadko, przynajmniej 2 razy w miesiącu: ${value} (${props.payload.uv}%)`,
                   ];
                 case "Bardzo rzadko":
                   return [
-                    `Bardzo rzadko, raz na miesiąc lub rzadziej: ${value}(${props.payload.uv}%)`,
+                    `Bardzo rzadko, raz na miesiąc lub rzadziej: ${value} (${props.payload.uv}%)`,
                   ];
                 case "Nigdy":
                   return [
-                    `Nigdy nie korzystałem/am: ${value}(${props.payload.uv}%)`,
+                    `Nigdy nie korzystałem/am: ${value} (${props.payload.uv}%)`,
                   ];
                 default:
                   return [value];

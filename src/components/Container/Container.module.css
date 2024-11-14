@@ -1,6 +1,6 @@
 .container {
   min-width: 360px;
-  
+
   width: 375px;
 
   margin: 0 auto;
@@ -11,14 +11,14 @@
   .container {
     width: 768px;
     /* padding: 0 12px; */
-   
+
     /* background-color: red; */
   }
 }
 
 @media screen and (min-width: 1440px) {
   .container {
-   width: 1440px;
+    width: 1440px;
     /* background-color: yellow; */
   }
 }
