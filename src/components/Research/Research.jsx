@@ -10,10 +10,10 @@ const Research = () => {
      <section className={css.section} id="badanie-delab">
       <div className={css.box}>
         <Reveal amount="1">
-          <h1 className={css.title} id="badanie DELab UW">
+          <h2 className={css.title} id="badanie DELab UW">
             {" "}
             O badaniu DELab UW
-          </h1>
+          </h2>
         </Reveal>
         <Reveal>
           <p className={css.text}>

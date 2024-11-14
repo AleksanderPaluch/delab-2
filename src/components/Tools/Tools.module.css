@@ -1,0 +1,46 @@
+.section {
+  padding: 40px 10px;
+  
+}
+
+.title {
+  color: #0000008a;
+  font-size: 28px;
+  line-height: 1.2;
+  margin-left: 30px;
+  margin-bottom: 24px;
+}
+
+.text {
+    text-align: justify;
+  font-size: 12.5px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 40px 20px;
+  }
+
+  .title {
+    font-size: 32px;
+    margin: 0px 40px 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    margin-bottom: 100px;
+    padding: 40px 80px;
+  }
+
+  .title {
+    font-size: 48px;
+    margin: 0px 80px 60px;
+  }
+
+  .text {
+    font-size: 15.5px;
+  }
+}

@@ -7,7 +7,7 @@ const GenAI = () => {
     <>
       <section className={css.section} id="generatywna-ai">
         <Reveal>
-          <h1 className={css.title}>Generatywna AI</h1>
+          <h2 className={css.title}>Generatywna AI</h2>
         </Reveal>
         <Reveal>
           <h2 className={css.subTitle}>

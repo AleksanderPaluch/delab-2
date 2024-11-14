@@ -5,9 +5,9 @@ const Recomendations = () => {
   return (
     <section className={css.section} id="dobre-praktyki">
         <Reveal   amount="0.99">
-          <h1 className={css.title} >
+          <h2 className={css.title} >
           Dobre Praktyki
-          </h1>
+          </h2>
         </Reveal>
       <div className={css.recomendBox}>
       

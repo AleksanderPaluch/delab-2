@@ -8,7 +8,7 @@ const Raport = () => {
   return (
     <section className={css.section} id="o-raporcie">
       <Reveal amount="0.99">
-        <h1 className={css.title}>O raporcie</h1>
+        <h2 className={css.title}>O raporcie</h2>
       </Reveal>
 
       <ul className={css.list}>

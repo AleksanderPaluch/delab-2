@@ -12,19 +12,20 @@ const Recomendations = lazy(() =>
 );
 const Research = lazy(() => import("./components/Research/Research"));
 const GenAI = lazy(() => import("./components/GenAI/GenAI"));
+const Tools = lazy(() => import("./components/Tools/Tools"));
 const Footer = lazy(() => import("./components/Footer/Footer"));
 
 function App() {
   return (
     <>
       <Layout>
-        <Hero />
+        {/* <Hero />
         <Raport />
         <Recomendations />
         <Research />
 
-        <GenAI />
-
+        <GenAI /> */}
+        <Tools />
         <Footer />
      
       </Layout>
