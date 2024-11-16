@@ -17,14 +17,11 @@ function App() {
   return (
     <>
       <Layout>
-        {/* <Hero />
+        <Hero />
         <Raport />
         <Recomendations />
         <Research />
-
-        <GenAI /> */}
-
-        <Tools />
+        <GenAI />
         <Tools />
         <Footer />
       </Layout>
