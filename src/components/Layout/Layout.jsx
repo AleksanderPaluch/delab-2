@@ -41,6 +41,7 @@ const Layout = ({ children }) => {
             top: 0,
             width: "99%",
             height: "8px",
+            zIndex: "999"
           }}
         />
       )}

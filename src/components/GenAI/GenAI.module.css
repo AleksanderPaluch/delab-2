@@ -1,7 +1,6 @@
 .section {
   padding: 40px 10px;
   text-align: justify;
-  
 }
 
 .title {
@@ -71,9 +70,6 @@
     gap: 40px;
   }
 
-  .textBox {
-  }
-
   .videoBox {
     margin-bottom: 40px;
   }
@@ -96,7 +92,6 @@
 
 @media screen and (min-width: 1440px) {
   .section {
-    
     padding: 40px 80px;
   }
 

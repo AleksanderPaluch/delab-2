@@ -4,8 +4,6 @@ import Layout from "./components/Layout/Layout";
 
 import Hero from "./components/Hero/Hero";
 
-
-
 const Raport = lazy(() => import("./components/Raport/Raport"));
 const Recomendations = lazy(() =>
   import("./components/Recomendations/Recomendations")
@@ -19,15 +17,16 @@ function App() {
   return (
     <>
       <Layout>
-        {/* <Hero />
+        <Hero />
         <Raport />
         <Recomendations />
         <Research />
 
-        <GenAI /> */}
+        <GenAI />
+
+        <Tools />
         <Tools />
         <Footer />
-     
       </Layout>
     </>
   );
