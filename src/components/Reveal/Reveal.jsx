@@ -1,7 +1,13 @@
 import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 
-const Reveal = ({ children, width = "fit-content", slide = true, amount = 0.25}) => {
+const Reveal = ({
+  children,
+  width = "fit-content",
+
+  amount = 0.25,
+ 
+}) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount });
   const mainControls = useAnimation();
@@ -27,7 +33,7 @@ const Reveal = ({ children, width = "fit-content", slide = true, amount = 0.25})
       >
         {children}
       </motion.div>
-      {slide ? (
+     
         <motion.div
           variants={{
             hidden: { left: 0 },
@@ -46,9 +52,8 @@ const Reveal = ({ children, width = "fit-content", slide = true, amount = 0.25})
             background: "#00000011",
           }}
         ></motion.div>
-      ) : (
-        ""
-      )}
+      
+      
     </div>
   );
 };
