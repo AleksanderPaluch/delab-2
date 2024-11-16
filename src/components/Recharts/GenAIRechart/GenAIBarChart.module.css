@@ -1,4 +1,5 @@
 .section {
+  width: 375px;
   padding: 40px 10px;
   position: relative;
   display: flex;
@@ -15,6 +16,7 @@
 
 @media screen and (min-width: 768px) {
   .section {
+    width: 768px;
     flex-direction: row;
     gap: 0px;
     padding: 60px 0px;
@@ -29,6 +31,7 @@
 
 @media screen and (min-width: 1440px) {
   .section {
+    width: 1440px;
     gap: 40px;
     padding: 80px 80px 40px 60px;
   }
