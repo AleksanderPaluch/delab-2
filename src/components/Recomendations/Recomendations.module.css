@@ -1,13 +1,10 @@
 .section {
   padding: 40px 10px;
-  margin-bottom: 0px;
-
 }
 
 .recomendBox {
   display: flex;
   flex-direction: column;
-  /* gap: 40px; */
 }
 
 .title {
@@ -26,10 +23,9 @@
   margin-left: 20px;
 }
 
-
 .list {
   text-align: justify;
- padding: 0px 10px;
+  padding: 0px 10px;
   position: relative;
   margin-bottom: 40px;
 }
@@ -41,11 +37,14 @@
   position: relative;
 }
 
+.link {
+  color: var(--blue);
+}
+
 
 
 @media screen and (min-width: 768px) {
   .section {
-
     padding: 40px 20px;
   }
 
@@ -55,14 +54,11 @@
   }
 
   .subTitle {
-    color: #0000008a;
     font-size: 24px;
     line-height: 1.4;
     margin-left: 40px;
     margin-bottom: 24px;
   }
-
-
 }
 
 @media screen and (min-width: 1440px) {
@@ -72,7 +68,6 @@
   }
 
   .title {
-    color: #0000008a;
     font-size: 48px;
     margin: 0px 80px 60px;
   }
@@ -85,6 +80,4 @@
   .item {
     font-size: 15.5px;
   }
-
-
 }

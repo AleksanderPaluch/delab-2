@@ -1,5 +1,6 @@
 import css from "./Tools.module.css";
 import DataTable from "react-data-table-component";
+import Reveal from "../Reveal/Reveal";
 
 const data = [
   {
@@ -234,14 +235,14 @@ const columns = [
     width: "20%",
   },
   {
-    name: "Creator",
+    name: "Twórca",
     selector: (row) => row.creator,
     sortable: true,
     width: "35%",
   },
 
   {
-    name: "Pricing",
+    name: "Czy płatne?",
     selector: (row) => row.pricing.join(", "), // Об’єднуємо масив у рядок
     wrap: true,
     width: "38%",
@@ -275,22 +276,32 @@ const customStyles = {
 
 const ExpandableComponent = ({ data }) => (
   <div className={css.infoBox}>
-    <p className={css.text}>{data.description}</p>
+    <p className={css.infoText}>
+      {" "}
+      <span className={css.span}>Zastosowanie:</span> {data.description}
+    </p>
   </div>
 );
 
 const Tools = () => {
   return (
     <section className={css.section}>
-      <h2 className={css.title}>Wybrane narzędzia generatywnej AI</h2>
-      <p className={css.text}>
-        Poniżej przedstawiamy listę wybranych narzędzi opartych na generatywnej
-        AI, wraz z opisem ich zastosowania. Narzędzia AI wyspecjalizowane do
-        konkretnych zadań można również znaleźć tutaj:{" "}
-        <a className={css.link} href="https://theresanaiforthat.com/">
-          link
-        </a>
-      </p>
+      <Reveal>
+        {" "}
+        <h2 className={css.title}>Wybrane narzędzia generatywnej AI</h2>
+      </Reveal>
+      <Reveal>
+        {" "}
+        <p className={css.text}>
+          Poniżej przedstawiamy listę wybranych narzędzi opartych na
+          generatywnej AI, wraz z opisem ich zastosowania. Narzędzia AI
+          wyspecjalizowane do konkretnych zadań można również znaleźć tutaj:{" "}
+          <a className={css.link} href="https://theresanaiforthat.com/">
+            theresanaiforthat.com
+          </a>
+        </p>
+      </Reveal>
+
       <div className={css.tableBox}>
         <DataTable
           className={css.table}

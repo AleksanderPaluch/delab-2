@@ -25,20 +25,20 @@ const Recomendations = () => {
                 Zapoznaj się z wytycznymi UW dotyczącymi korzystania z narzędzi
                 sztucznej inteligencji w procesie kształcenia, które zostały
                 zawarte w{" "}
-                <a
+                <a className={css.link}
                   href="https://dokumenty.uw.edu.pl/dziennik/DURK/Lists/Dziennik/Attachments/134/DURK.2023.98.UURK.98.pdf"
                   target="_blank"
                 >
                   Uchwale nr 98 Uniwersyteckiej Rady ds. Kształcenia
                 </a>{" "}
                 z dnia z dnia 8 grudnia 2023 r. (dalej nazywanej Uchwałą) →{" "}
-                <a href="wytyczne/">więcej</a>
+                <a className={css.link} href="wytyczne/">więcej</a>
               </li>
               <li className={css.item}>
                 <p>
                   Sprawdź, czy Rada Dydaktyczna w Twojej dyscyplinie lub Twoja
                   jednostka określa dodatkowe zasady korzystania z narzędzi
-                  generatywnej AI. → <a href="">więcej</a>
+                  generatywnej AI. → <a className={css.link} href="">więcej</a>
                 </p>
               </li>
               <li className={css.item}>
@@ -49,7 +49,7 @@ const Recomendations = () => {
                   wytwarzane przez osoby studiujące (np. prace zaliczeniowe,
                   egzaminy), jak i pracujące na UW (np. prezentacje z wykładów,
                   artykuły czy materiały do nauki) objęte są ochroną. →{" "}
-                  <a href="https://docs.google.com/document/d/1AT2ocGuGsHhxnWGehLP9QVdYcwX0Fuuvkv6p-7MM0oE/edit#bookmark=id.2d5hqv1oe4hq">
+                  <a className={css.link} href="https://docs.google.com/document/d/1AT2ocGuGsHhxnWGehLP9QVdYcwX0Fuuvkv6p-7MM0oE/edit#bookmark=id.2d5hqv1oe4hq">
                     więcej
                   </a>
                 </p>
