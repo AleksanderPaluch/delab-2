@@ -18,14 +18,34 @@
 }
 
 .link {
+  margin-left: 10px;
   color: var(--blue);
 }
 
 .infoBox {
-  padding: 10px;
+  padding: 10px 20px;
   border-right: 1px solid var(--cream);
-    border-bottom: 1px solid var(--cream);
-    border-left: 1px solid var(--cream);
+  border-bottom: 1px solid var(--cream);
+  border-left: 1px solid var(--cream);
+}
+
+.span {
+  font-size: 14px;
+  margin-right: 12px;
+  color: var(--blue);
+}
+
+.infoBox {
+  width: 355px;
+}
+
+.infoText {
+  font-size: 12.5px;
+  color: var(--title);
+}
+
+.table {
+  width: 355px;
 }
 
 @media screen and (min-width: 768px) {
@@ -39,6 +59,9 @@
   }
 
   .table {
+    width: 745px;
+  }
+  .infoBox {
     width: 745px;
   }
 }
@@ -65,15 +88,14 @@
   }
 
   .tableBox {
-    
     margin: auto;
     width: 85%;
     font-size: 30px;
   }
 
   .infoBox {
+    width: 100%;
     padding: 20px;
-    
   }
 
   .infoText {

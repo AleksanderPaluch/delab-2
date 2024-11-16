@@ -1,6 +1,7 @@
 import css from "./Tools.module.css";
 import DataTable from "react-data-table-component";
 import Reveal from "../Reveal/Reveal";
+import { useEffect, useState } from "react";
 
 const data = [
   {
@@ -229,7 +230,7 @@ const data = [
 
 const columns = [
   {
-    name: "Name", // Заголовок колонки
+    name: "Nazwa", // Заголовок колонки
     selector: (row) => row.name, // Як отримати дані для цієї колонки
     sortable: true, // Додати сортування
     width: "20%",
@@ -249,49 +250,84 @@ const columns = [
   },
 ];
 
-const customStyles = {
+
+
+
+const baseCustomStyles = {
   table: {
-    style: {
-      fontSize: "15.5px",
-      color: "red",
-    },
+    style: {},
   },
   rows: {
-    style: {
-      fontSize: "15.5px",
-    },
+    style: {},
   },
   header: {
     style: {
-      fontSize: "22px",
+      fontSize: "18px",
       color: "var(--blue)",
     },
   },
   headCells: {
-    style: {
-      fontSize: "13px",
-    },
+    style: {},
   },
+};
+
+// Функція для оновлення стилів на основі розміру вікна
+const getResponsiveStyles = () => {
+  if (window.innerWidth >= 1440) {
+    return {
+      ...baseCustomStyles,
+      rows: {
+        style: {
+          fontSize: "15.5px", // Збільшений розмір шрифту для рядків
+        },
+      },
+      header: {
+        style: {
+          fontSize: "22px", // Збільшений розмір шрифту для заголовка
+          color: "var(--blue)",
+        },
+      },
+      headCells: {
+        style: {
+          fontSize: "13px", // Збільшений розмір шрифту для заголовків колонок
+        },
+      },
+    };
+  }
+  return baseCustomStyles;
 };
 
 const ExpandableComponent = ({ data }) => (
   <div className={css.infoBox}>
     <p className={css.infoText}>
-      {" "}
       <span className={css.span}>Zastosowanie:</span> {data.description}
     </p>
   </div>
 );
 
 const Tools = () => {
+  const [customStyles, setCustomStyles] = useState(getResponsiveStyles());
+
+  useEffect(() => {
+    // Оновлюємо стилі при зміні розміру вікна
+    const handleResize = () => {
+      setCustomStyles(getResponsiveStyles());
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Очищення під час розмонтування
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <section className={css.section}>
       <Reveal>
-        {" "}
         <h2 className={css.title}>Wybrane narzędzia generatywnej AI</h2>
       </Reveal>
       <Reveal>
-        {" "}
         <p className={css.text}>
           Poniżej przedstawiamy listę wybranych narzędzi opartych na
           generatywnej AI, wraz z opisem ich zastosowania. Narzędzia AI
