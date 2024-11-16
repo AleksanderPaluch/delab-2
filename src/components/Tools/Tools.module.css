@@ -24,9 +24,7 @@
 
 .infoBox {
   padding: 10px 20px;
-  border-right: 1px solid var(--cream);
-  border-bottom: 1px solid var(--cream);
-  border-left: 1px solid var(--cream);
+
 }
 
 .span {
@@ -44,9 +42,7 @@
   color: var(--title);
 }
 
-.table {
-  width: 355px;
-}
+
 
 @media screen and (min-width: 768px) {
   .section {
@@ -58,9 +54,7 @@
     margin: 0px 40px 40px;
   }
 
-  .table {
-    width: 745px;
-  }
+
   .infoBox {
     width: 745px;
   }
@@ -83,9 +77,7 @@
     margin-bottom: 40px;
   }
 
-  .table {
-    width: 100%;
-  }
+
 
   .tableBox {
     margin: auto;

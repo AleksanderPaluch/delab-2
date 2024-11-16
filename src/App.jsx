@@ -23,7 +23,7 @@ function App() {
         <Research />
         {/* <GenAI /> */}
         <Tools />
-        <Footer />
+        {/* <Footer /> */}
       </Layout>
     </>
   );

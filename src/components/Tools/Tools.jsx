@@ -2,6 +2,7 @@ import css from "./Tools.module.css";
 import DataTable from "react-data-table-component";
 import Reveal from "../Reveal/Reveal";
 import { useEffect, useState } from "react";
+import { wrap } from "framer-motion";
 
 const data = [
   {
@@ -233,20 +234,23 @@ const columns = [
     name: "Nazwa", // Заголовок колонки
     selector: (row) => row.name, // Як отримати дані для цієї колонки
     sortable: true, // Додати сортування
-    width: "20%",
+    wrap: true,
+    width: "20%"
   },
   {
     name: "Twórca",
     selector: (row) => row.creator,
     sortable: true,
-    width: "35%",
+    wrap: true,
+    width: "25%"
   },
 
   {
     name: "Czy płatne?",
     selector: (row) => row.pricing.join(", "), // Об’єднуємо масив у рядок
     wrap: true,
-    width: "38%",
+   width: "45%"
+   
   },
 ];
 
@@ -255,7 +259,9 @@ const columns = [
 
 const baseCustomStyles = {
   table: {
-    style: {},
+    style: {
+      minWidth: "648px"
+    },
   },
   rows: {
     style: {},
@@ -276,6 +282,11 @@ const getResponsiveStyles = () => {
   if (window.innerWidth >= 1440) {
     return {
       ...baseCustomStyles,
+      table: {
+        style: {
+          maxWidth: "100%"
+        },
+      },
       rows: {
         style: {
           fontSize: "15.5px", // Збільшений розмір шрифту для рядків
