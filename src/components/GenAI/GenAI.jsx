@@ -133,7 +133,7 @@ const GenAI = () => {
           </div>
         </div>
       </section>
-      {/* <GenAIBarChart /> */}
+      <GenAIBarChart />
     </>
   );
 };

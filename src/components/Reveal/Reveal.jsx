@@ -4,9 +4,8 @@ import { motion, useAnimation, useInView } from "framer-motion";
 const Reveal = ({
   children,
   width = "fit-content",
-
+  slide = true,
   amount = 0.25,
- 
 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount });
@@ -33,7 +32,7 @@ const Reveal = ({
       >
         {children}
       </motion.div>
-     
+      {slide ? (
         <motion.div
           variants={{
             hidden: { left: 0 },
@@ -52,8 +51,9 @@ const Reveal = ({
             background: "#00000011",
           }}
         ></motion.div>
-      
-      
+      ) : (
+        ""
+      )}
     </div>
   );
 };
