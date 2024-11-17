@@ -5,8 +5,8 @@
   border-top-left-radius: 20px; /* Adjust the radius as needed */
   border-top-right-radius: 20px;
   background-color: #3c3c3ce5;
-  position: fixed;
-  bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
   display: flex;
   padding: 10px;
   justify-content: center;
