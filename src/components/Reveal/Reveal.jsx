@@ -6,6 +6,7 @@ const Reveal = ({
   width = "fit-content",
   slide = true,
   amount = 0.25,
+  delay = 0.3
 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount });
@@ -28,7 +29,7 @@ const Reveal = ({
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.5, delay: 0.3 }}
+        transition={{ duration: 0.5, delay }}
       >
         {children}
       </motion.div>

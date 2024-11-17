@@ -1,4 +1,4 @@
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   BarChart,
   Bar,
@@ -69,7 +69,9 @@ const data2 = [
 const FieldBarChart = () => {
   const { ref: bar, inView } = useInView();
 
-  const [responsiveSettings, setResponsiveSettings] = useState(getResponsiveSettings());
+  const [responsiveSettings, setResponsiveSettings] = useState(
+    getResponsiveSettings()
+  );
 
   function getResponsiveSettings() {
     const width = window.innerWidth;
@@ -115,15 +117,20 @@ const FieldBarChart = () => {
             }}
             tickLine={false}
           />
-          <Tooltip
-            formatter={(value, name) => [`${value}%`, name]}
-            contentStyle={{
-              backgroundColor: "#f0eff4d2",
-              borderRadius: "12px",
-              color: "#130066cb",
-            }}
-            labelStyle={{ color: "#130066CC" }}
-          />
+          {responsiveSettings.showLegend2 ? (
+            ""
+          ) : (
+            <Tooltip
+              formatter={(value, name) => [`${value}%`, name]}
+              contentStyle={{
+                backgroundColor: "#f0eff4d2",
+                borderRadius: "10px",
+                color: "#130066cb",
+              }}
+              labelStyle={{ color: "#130066CC" }}
+            />
+          )}
+
           {responsiveSettings.showLegend && <Legend layout="vertical" />}
           <Bar
             dataKey="Zgadzam się"
@@ -171,16 +178,21 @@ const FieldBarChart = () => {
             }}
             tickLine={false}
           />
-          <Tooltip
-            formatter={(value, name) => [`${value}%`, name]}
-            contentStyle={{
-              backgroundColor: "#f0eff4d2",
-              borderRadius: "12px",
-              color: "#130066cb",
-            }}
-            labelStyle={{ color: "#130066CC" }}
-          />
-             {responsiveSettings.showLegend2 && <Legend layout="vertical" />}
+          {responsiveSettings.showLegend2 ? (
+            ""
+          ) : (
+            <Tooltip
+              formatter={(value, name) => [`${value}%`, name]}
+              contentStyle={{
+                backgroundColor: "#f0eff4d2",
+                borderRadius: "10px",
+                color: "#130066cb",
+              }}
+              labelStyle={{ color: "#130066CC" }}
+            />
+          )}
+
+          {responsiveSettings.showLegend2 && <Legend layout="vertical" />}
           <Bar
             dataKey="Zgadzam się"
             stackId="a"
