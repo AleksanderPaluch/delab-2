@@ -2,8 +2,8 @@ import { lazy } from "react";
 import "./App.css";
 import Layout from "./components/Layout/Layout";
 
-import Hero from "./components/Hero/Hero";
 
+const Hero = lazy(() => import("./components/Hero/Hero"));
 const Raport = lazy(() => import("./components/Raport/Raport"));
 const Recomendations = lazy(() =>
   import("./components/Recomendations/Recomendations")
