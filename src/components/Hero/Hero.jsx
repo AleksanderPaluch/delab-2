@@ -9,12 +9,12 @@ const Hero = () => {
         <SideBarNav />
       </div>
 
-      <Reveal  delay={0} >
+      <Reveal slide={false} delay={0} >
         <h1 className={css.title}>Generatywna AI na UW - dobre praktyki</h1>
       </Reveal>
 
 
-      <Reveal   >
+      <Reveal  slide={false} >
         <p className={css.text}>
         Przewodnik po bezpiecznym i
         świadomym korzystaniu z AI, obejmujący zasady, etyczne wyzwania oraz praktyczne wskazówki dla
@@ -27,4 +27,3 @@ const Hero = () => {
 
 export default Hero;
 
-// slide={false}

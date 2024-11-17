@@ -33,7 +33,7 @@ const navItems = [
   { position: 17, title: "Dobre Praktyki", id: "dobre-praktyki" },
   { position: 24, title: "Badanie DeLab UW", id: "badanie-delab" },
   { position: 31, title: "Generatywna AI", id: "generatywna-ai" },
-  { position: 38, title: "Narzędzie GenAI", id: "narzedzie-genai" },
+  { position: 38, title: "Narzędzia GenAI", id: "narzedzia-genai" },
   { position: 45, title: "Wytyczne UW", id: "wytyczne-uw" },
 ];
 

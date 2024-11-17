@@ -254,9 +254,6 @@ const columns = [
   },
 ];
 
-
-
-
 const baseCustomStyles = {
   table: {
     style: {
@@ -334,7 +331,7 @@ const Tools = () => {
   }, []);
 
   return (
-    <section className={css.section}>
+    <section className={css.section} id="narzedzia-genai">
       <Reveal>
         <h2 className={css.title}>Wybrane narzędzia generatywnej AI</h2>
       </Reveal>
