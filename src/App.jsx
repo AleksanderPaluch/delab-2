@@ -1,8 +1,9 @@
 import { lazy } from "react";
 import "./App.css";
+import Layout from "./components/Layout/Layout";
 
 import Hero from "./components/Hero/Hero";
-const Layout = lazy(() => import("./components/Layout/Layout"));
+
 const Raport = lazy(() => import("./components/Raport/Raport"));
 const Recomendations = lazy(() =>
   import("./components/Recomendations/Recomendations")
