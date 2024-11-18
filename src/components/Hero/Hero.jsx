@@ -14,13 +14,13 @@ const Hero = () => {
       </Reveal>
 
 
-      {/* <Reveal   >
+      <Reveal   >
         <p className={css.text}>
         Przewodnik po bezpiecznym i
         świadomym korzystaniu z AI, obejmujący zasady, etyczne wyzwania oraz praktyczne wskazówki dla
           studentów i wykładowców
         </p>
-      </Reveal> */}
+      </Reveal>
     </section>
   );
 };
