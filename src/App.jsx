@@ -1,9 +1,8 @@
 import { lazy } from "react";
 import "./App.css";
-import Layout from "./components/Layout/Layout";
 
 import Hero from "./components/Hero/Hero";
-
+const Layout = lazy(() => import("./components/Layout/Layout"));
 const Raport = lazy(() => import("./components/Raport/Raport"));
 const Recomendations = lazy(() =>
   import("./components/Recomendations/Recomendations")
@@ -16,8 +15,8 @@ const Footer = lazy(() => import("./components/Footer/Footer"));
 function App() {
   return (
     <>
+      <Hero />
       <Layout>
-        <Hero />
         <Raport />
         <Recomendations />
         <Research />
