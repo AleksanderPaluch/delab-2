@@ -9,7 +9,7 @@ const Hero = () => {
         <SideBarNav />
       </div>
 
-      <Reveal slide={false} delay={0} >
+      <Reveal slide={false} >
         <h1 className={css.title}>Generatywna AI na UW - dobre praktyki</h1>
       </Reveal>
 
