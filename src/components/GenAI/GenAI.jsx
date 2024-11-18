@@ -49,7 +49,7 @@ const GenAI = () => {
             </Reveal>
           </div>
 
-          <iframe
+          {/* <iframe
             width={window.innerWidth < 768 ? "355" : "550"}
             height={window.innerWidth < 768 ? "200" : "310"}
             src="https://www.youtube-nocookie.com/embed/i6ssUfaSbg4?si=23CdvTsBDQOqaiNo"
@@ -58,7 +58,7 @@ const GenAI = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
-          ></iframe>
+          ></iframe> */}
         </div>
         <div className={css.box}>
           <div className={css.smallBox}>
