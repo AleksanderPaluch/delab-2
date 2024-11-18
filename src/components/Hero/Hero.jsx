@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className={css.section}>
       <div className={css.sideBar}>
-        {/* <SideBarNav /> */}
+        <SideBarNav />
       </div>
 
       <Reveal >
