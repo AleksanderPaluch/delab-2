@@ -15,8 +15,8 @@ const Footer = lazy(() => import("./components/Footer/Footer"));
 function App() {
   return (
     <>
-      <Hero />
       <Layout>
+        <Hero />
         <Raport />
         <Recomendations />
         <Research />
