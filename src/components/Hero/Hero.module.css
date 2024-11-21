@@ -11,13 +11,16 @@
   gap: 60px;
 }
 
-
-
 .title {
   text-align: center;
   color: #0000008a;
   font-size: 30px;
   line-height: 1.2;
+
+  /* Анімація */
+  opacity: 0; /* Початковий стан - невидимий */
+  transform: translateY(75px); /* Початковий стан - зміщений вниз */
+  animation: slideIn 0.5s ease-out forwards; /* Анімація з затримкою */
 }
 
 .subTitle {
@@ -31,6 +34,11 @@
   color: #0000005f;
   font-size: 17px;
   text-align: justify;
+
+  /* Анімація */
+  opacity: 0; /* Початковий стан - невидимий */
+  transform: translateY(75px); /* Початковий стан - зміщений вниз */
+  animation: slideIn 0.5s ease-out forwards; /* Анімація з затримкою */
 }
 
 .span {
@@ -49,7 +57,6 @@
   .section {
     height: 100vh;
     min-height: 375px;
-    
   }
 
   .title {
@@ -89,5 +96,17 @@
   }
   .span {
     font-size: 58px;
+  }
+}
+
+/* Анімація для плавної появи */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(75px); /* Зсув вниз */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Кінцеве положення */
   }
 }
