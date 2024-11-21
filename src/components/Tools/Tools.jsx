@@ -235,29 +235,28 @@ const columns = [
     selector: (row) => row.name, // Як отримати дані для цієї колонки
     sortable: true, // Додати сортування
     wrap: true,
-    width: "20%"
+    width: "20%",
   },
   {
     name: "Twórca",
     selector: (row) => row.creator,
     sortable: true,
     wrap: true,
-    width: "25%"
+    width: "25%",
   },
 
   {
     name: "Czy płatne?",
     selector: (row) => row.pricing.join(", "), // Об’єднуємо масив у рядок
     wrap: true,
-   width: "45%"
-   
+    width: "45%",
   },
 ];
 
 const baseCustomStyles = {
   table: {
     style: {
-      minWidth: "648px"
+      minWidth: "648px",
     },
   },
   rows: {
@@ -281,7 +280,7 @@ const getResponsiveStyles = () => {
       ...baseCustomStyles,
       table: {
         style: {
-          maxWidth: "100%"
+          maxWidth: "100%",
         },
       },
       rows: {
@@ -336,10 +335,15 @@ const Tools = () => {
         <h2 className={css.title}>Wybrane narzędzia generatywnej AI</h2>
       </Reveal>
       <Reveal>
-        <p className={css.text}>
+        <p className={css.subTitle}>
           Poniżej przedstawiamy listę wybranych narzędzi opartych na
-          generatywnej AI, wraz z opisem ich zastosowania. Narzędzia AI
-          wyspecjalizowane do konkretnych zadań można również znaleźć tutaj:{" "}
+          generatywnej AI, wraz z opisem ich zastosowania.
+        </p>
+      </Reveal>
+      <Reveal>
+        <p className={css.text}>
+          Narzędzia AI wyspecjalizowane do konkretnych zadań można również
+          znaleźć tutaj:{" "}
           <a className={css.link} href="https://theresanaiforthat.com/">
             theresanaiforthat.com
           </a>

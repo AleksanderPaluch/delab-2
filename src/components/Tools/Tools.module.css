@@ -9,6 +9,11 @@
   margin-left: 30px;
   margin-bottom: 24px;
 }
+.subTitle {
+  color: #0000008a;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
 
 .text {
   text-align: justify;
@@ -54,6 +59,10 @@
     margin: 0px 40px 40px;
   }
 
+  .subTitle {
+    font-size: 24px;
+    margin: 0px 20px 40px;
+  }
 
   .infoBox {
     width: 745px;
@@ -76,8 +85,15 @@
     line-height: 1.4;
     width: 860px;
     margin-bottom: 40px;
+    margin-left: 20px;
   }
 
+
+  .subTitle {
+    color: #0000008a;
+    font-size: 24px;
+    
+  }
 
 
   .tableBox {

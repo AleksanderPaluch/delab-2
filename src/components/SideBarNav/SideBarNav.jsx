@@ -23,8 +23,7 @@ import { useEffect, useRef, useState } from "react";
       */
 
 // Total number of lines on the side of the page
-const NUM_LINES =
-  window.innerWidth < 768 ? 100 : window.innerWidth > 1440 ? 100 : 80;
+const NUM_LINES = 80
 
 // Position key will place the title on the Nth
 // line of the sidebar
@@ -34,7 +33,7 @@ const navItems = [
   { position: 24, title: "Badanie DeLab UW", id: "badanie-delab" },
   { position: 31, title: "Generatywna AI", id: "generatywna-ai" },
   { position: 38, title: "Narzędzia GenAI", id: "narzedzia-genai" },
-  { position: 45, title: "Wytyczne UW", id: "wytyczne-uw" },
+  // { position: 45, title: "Wytyczne UW", id: "wytyczne-uw" },
 ];
 
 const SideBarNav = () => {
