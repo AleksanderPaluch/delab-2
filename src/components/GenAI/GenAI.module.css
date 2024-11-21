@@ -47,6 +47,10 @@
   flex-direction: column;
 }
 
+.largeVideo {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .section {
     padding: 40px 20px;
@@ -72,6 +76,14 @@
 
   .videoBox {
     margin-bottom: 40px;
+  }
+
+  .smallVideo {
+    display: none;
+  }
+
+  .largeVideo {
+    display: block;
   }
 
   .box {
