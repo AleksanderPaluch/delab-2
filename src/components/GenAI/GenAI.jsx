@@ -1,8 +1,19 @@
 import css from "./GenAI.module.css";
 import Reveal from "../Reveal/Reveal";
 import GenAIBarChart from "../Recharts/GenAIRechart/GenAIBarChart";
+import { lazy } from "react";
+
+
+const VideoComponent = lazy(() => import("./LazyVideo"));
+
+
 
 const GenAI = () => {
+
+
+
+
+
   return (
     <>
       <section className={css.section} id="generatywna-ai">
@@ -48,18 +59,8 @@ const GenAI = () => {
               </p>
             </Reveal>
           </div>
-   
 
-          <iframe
-            width={window.innerWidth < 768 ? "355" : "550"}
-            height={window.innerWidth < 768 ? "200" : "310"}
-            src="https://www.youtube.com/embed/i6ssUfaSbg4?si=QOsNeCMv918VAy9w"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
+          <VideoComponent />
         </div>
         <div className={css.box}>
           <div className={css.smallBox}>
