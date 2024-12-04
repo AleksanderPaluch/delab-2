@@ -12,7 +12,7 @@ const Hero = () => {
 
 
 
-      <h1 className={css.title}>Generatywna AI na UW - dobre praktyki</h1>
+      <h1 className={css.title}>Generatywna AI - dobre praktyki</h1>
 
       <p className={css.text}>
         Przewodnik po bezpiecznym i świadomym korzystaniu z AI, obejmujący
